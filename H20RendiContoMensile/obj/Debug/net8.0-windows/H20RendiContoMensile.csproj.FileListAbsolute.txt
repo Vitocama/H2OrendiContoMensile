@@ -1,0 +1,17 @@
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\H20RendiContoMensile.exe
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\H20RendiContoMensile.deps.json
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\H20RendiContoMensile.runtimeconfig.json
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\H20RendiContoMensile.dll
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\H20RendiContoMensile.pdb
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.Form1.resources
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.csproj.GenerateResource.cache
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.AssemblyInfoInputs.cache
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.AssemblyInfo.cs
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.csproj.CoreCompileInputs.cache
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.sourcelink.json
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.dll
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\refint\H20RendiContoMensile.dll
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.pdb
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.genruntimeconfig.cache
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\ref\H20RendiContoMensile.dll
