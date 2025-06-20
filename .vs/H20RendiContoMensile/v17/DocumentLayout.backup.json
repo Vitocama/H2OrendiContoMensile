@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
+              "Title": "Form1.cs [Progettazione]",
               "DocumentMoniker": "C:\\Users\\Hirad\\source\\repos\\H20RendiContoMensile\\H20RendiContoMensile\\Form1.cs",
               "RelativeDocumentMoniker": "H20RendiContoMensile\\Form1.cs",
-              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\H20RendiContoMensile\\H20RendiContoMensile\\Form1.cs [Design]",
-              "RelativeToolTip": "H20RendiContoMensile\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\H20RendiContoMensile\\H20RendiContoMensile\\Form1.cs [Progettazione]",
+              "RelativeToolTip": "H20RendiContoMensile\\Form1.cs [Progettazione]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T10:13:18.196Z",
-              "EditorCaption": " [Design]"
+              "EditorCaption": " [Progettazione]"
             }
           ]
         }

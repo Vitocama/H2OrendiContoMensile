@@ -50,6 +50,7 @@
             button1.TabIndex = 0;
             button1.Text = "Gennaio";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -59,6 +60,7 @@
             button2.TabIndex = 1;
             button2.Text = "Febbraio";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -68,6 +70,7 @@
             button3.TabIndex = 2;
             button3.Text = "Marzo";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -77,6 +80,7 @@
             button4.TabIndex = 3;
             button4.Text = "Aprile";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -86,6 +90,7 @@
             button5.TabIndex = 4;
             button5.Text = "Maggio";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
@@ -95,6 +100,7 @@
             button6.TabIndex = 5;
             button6.Text = "Giugno";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -104,6 +110,7 @@
             button7.TabIndex = 6;
             button7.Text = "Luglio";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -113,6 +120,7 @@
             button8.TabIndex = 7;
             button8.Text = "Agosto";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
@@ -122,6 +130,7 @@
             button9.TabIndex = 8;
             button9.Text = "Settembre";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // button10
             // 
@@ -131,6 +140,7 @@
             button10.TabIndex = 9;
             button10.Text = "Ottoblre";
             button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
             // 
             // button11
             // 
@@ -140,6 +150,7 @@
             button11.TabIndex = 10;
             button11.Text = "Novembre";
             button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
             // 
             // button12
             // 
@@ -149,6 +160,7 @@
             button12.TabIndex = 11;
             button12.Text = "Dicembre";
             button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click;
             // 
             // Form1
             // 
