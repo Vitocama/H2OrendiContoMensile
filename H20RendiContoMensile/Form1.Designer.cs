@@ -40,11 +40,32 @@
             button10 = new Button();
             button11 = new Button();
             button12 = new Button();
+            panel1 = new Panel();
+            textBoxCMD = new TextBox();
+            labelCMD = new Label();
+            panel2 = new Panel();
+            textBoxNome = new TextBox();
+            labelNome = new Label();
+            panel3 = new Panel();
+            textBoxCognome = new TextBox();
+            labelCognome = new Label();
+            panel4 = new Panel();
+            textBox1 = new TextBox();
+            label1 = new Label();
+            checkedListBox1 = new CheckedListBox();
+            panel5 = new Panel();
+            dataGridView1 = new DataGridView();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
+            panel4.SuspendLayout();
+            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(3, 67);
+            button1.Location = new Point(3, 40);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 0;
@@ -54,7 +75,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(92, 67);
+            button2.Location = new Point(91, 40);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 1;
@@ -64,7 +85,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(182, 67);
+            button3.Location = new Point(181, 40);
             button3.Name = "button3";
             button3.Size = new Size(94, 29);
             button3.TabIndex = 2;
@@ -74,7 +95,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(273, 67);
+            button4.Location = new Point(268, 40);
             button4.Name = "button4";
             button4.Size = new Size(94, 29);
             button4.TabIndex = 3;
@@ -84,7 +105,7 @@
             // 
             // button5
             // 
-            button5.Location = new Point(352, 67);
+            button5.Location = new Point(358, 40);
             button5.Name = "button5";
             button5.Size = new Size(94, 29);
             button5.TabIndex = 4;
@@ -94,7 +115,7 @@
             // 
             // button6
             // 
-            button6.Location = new Point(433, 67);
+            button6.Location = new Point(449, 40);
             button6.Name = "button6";
             button6.Size = new Size(94, 29);
             button6.TabIndex = 5;
@@ -104,7 +125,7 @@
             // 
             // button7
             // 
-            button7.Location = new Point(523, 67);
+            button7.Location = new Point(540, 40);
             button7.Name = "button7";
             button7.Size = new Size(94, 29);
             button7.TabIndex = 6;
@@ -114,7 +135,7 @@
             // 
             // button8
             // 
-            button8.Location = new Point(613, 67);
+            button8.Location = new Point(627, 40);
             button8.Name = "button8";
             button8.Size = new Size(94, 29);
             button8.TabIndex = 7;
@@ -124,7 +145,7 @@
             // 
             // button9
             // 
-            button9.Location = new Point(704, 67);
+            button9.Location = new Point(717, 40);
             button9.Name = "button9";
             button9.Size = new Size(94, 29);
             button9.TabIndex = 8;
@@ -134,7 +155,7 @@
             // 
             // button10
             // 
-            button10.Location = new Point(790, 67);
+            button10.Location = new Point(807, 40);
             button10.Name = "button10";
             button10.Size = new Size(94, 29);
             button10.TabIndex = 9;
@@ -144,7 +165,7 @@
             // 
             // button11
             // 
-            button11.Location = new Point(879, 67);
+            button11.Location = new Point(898, 40);
             button11.Name = "button11";
             button11.Size = new Size(94, 29);
             button11.TabIndex = 10;
@@ -154,7 +175,7 @@
             // 
             // button12
             // 
-            button12.Location = new Point(960, 67);
+            button12.Location = new Point(989, 40);
             button12.Name = "button12";
             button12.Size = new Size(94, 29);
             button12.TabIndex = 11;
@@ -162,25 +183,175 @@
             button12.UseVisualStyleBackColor = true;
             button12.Click += button12_Click;
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(textBoxCMD);
+            panel1.Controls.Add(labelCMD);
+            panel1.Location = new Point(12, 173);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(140, 67);
+            panel1.TabIndex = 20;
+            // 
+            // textBoxCMD
+            // 
+            textBoxCMD.Location = new Point(0, 34);
+            textBoxCMD.Name = "textBoxCMD";
+            textBoxCMD.Size = new Size(125, 27);
+            textBoxCMD.TabIndex = 16;
+            textBoxCMD.TextChanged += textBox4_TextChanged;
+            // 
+            // labelCMD
+            // 
+            labelCMD.AutoSize = true;
+            labelCMD.Location = new Point(3, 11);
+            labelCMD.Name = "labelCMD";
+            labelCMD.Size = new Size(42, 20);
+            labelCMD.TabIndex = 13;
+            labelCMD.Text = "CMD";
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(textBoxNome);
+            panel2.Controls.Add(labelNome);
+            panel2.Location = new Point(12, 325);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(140, 71);
+            panel2.TabIndex = 21;
+            // 
+            // textBoxNome
+            // 
+            textBoxNome.Location = new Point(0, 35);
+            textBoxNome.Name = "textBoxNome";
+            textBoxNome.Size = new Size(125, 27);
+            textBoxNome.TabIndex = 16;
+            // 
+            // labelNome
+            // 
+            labelNome.AutoSize = true;
+            labelNome.Location = new Point(0, 12);
+            labelNome.Name = "labelNome";
+            labelNome.Size = new Size(50, 20);
+            labelNome.TabIndex = 13;
+            labelNome.Text = "Nome";
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(textBoxCognome);
+            panel3.Controls.Add(labelCognome);
+            panel3.Location = new Point(12, 481);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(140, 67);
+            panel3.TabIndex = 22;
+            // 
+            // textBoxCognome
+            // 
+            textBoxCognome.Location = new Point(0, 33);
+            textBoxCognome.Name = "textBoxCognome";
+            textBoxCognome.Size = new Size(125, 27);
+            textBoxCognome.TabIndex = 16;
+            // 
+            // labelCognome
+            // 
+            labelCognome.AutoSize = true;
+            labelCognome.Location = new Point(0, 10);
+            labelCognome.Name = "labelCognome";
+            labelCognome.Size = new Size(74, 20);
+            labelCognome.TabIndex = 13;
+            labelCognome.Text = "Cognome";
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(textBox1);
+            panel4.Controls.Add(label1);
+            panel4.Location = new Point(951, 3);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(136, 61);
+            panel4.TabIndex = 23;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(0, 34);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(125, 27);
+            textBox1.TabIndex = 16;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(0, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(46, 20);
+            label1.TabIndex = 13;
+            label1.Text = "Cerca";
+            // 
+            // checkedListBox1
+            // 
+            checkedListBox1.BorderStyle = BorderStyle.None;
+            checkedListBox1.FormattingEnabled = true;
+            checkedListBox1.Items.AddRange(new object[] { "Cmd", "Nome", "Cognome" });
+            checkedListBox1.Location = new Point(1093, 3);
+            checkedListBox1.Name = "checkedListBox1";
+            checkedListBox1.Size = new Size(150, 66);
+            checkedListBox1.TabIndex = 24;
+            checkedListBox1.SelectedIndexChanged += checkedListBox1_SelectedIndexChanged;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(button1);
+            panel5.Controls.Add(button2);
+            panel5.Controls.Add(button3);
+            panel5.Controls.Add(button4);
+            panel5.Controls.Add(button5);
+            panel5.Controls.Add(button6);
+            panel5.Controls.Add(button12);
+            panel5.Controls.Add(button7);
+            panel5.Controls.Add(button11);
+            panel5.Controls.Add(button8);
+            panel5.Controls.Add(button10);
+            panel5.Controls.Add(button9);
+            panel5.Location = new Point(12, 79);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(1102, 77);
+            panel5.TabIndex = 25;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AllowUserToOrderColumns = true;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(193, 173);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(921, 375);
+            dataGridView1.TabIndex = 26;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1122, 450);
-            Controls.Add(button12);
-            Controls.Add(button11);
-            Controls.Add(button10);
-            Controls.Add(button9);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            BackColor = Color.PowderBlue;
+            ClientSize = new Size(1343, 592);
+            Controls.Add(dataGridView1);
+            Controls.Add(panel5);
+            Controls.Add(checkedListBox1);
+            Controls.Add(panel4);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -198,5 +369,20 @@
         private Button button10;
         private Button button11;
         private Button button12;
+        private Panel panel1;
+        private TextBox textBoxCMD;
+        private Label labelCMD;
+        private Panel panel2;
+        private TextBox textBoxNome;
+        private Label labelNome;
+        private Panel panel3;
+        private TextBox textBoxCognome;
+        private Label labelCognome;
+        private Panel panel4;
+        private TextBox textBox1;
+        private Label label1;
+        private CheckedListBox checkedListBox1;
+        private Panel panel5;
+        private DataGridView dataGridView1;
     }
 }

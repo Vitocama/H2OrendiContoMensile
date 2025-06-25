@@ -3,7 +3,7 @@ namespace H20RendiContoMensile
     public partial class Form1 : Form
     {
 
-        List<Button> buttons=new List<Button>();
+        List<Button> buttons = new List<Button>();
         public Form1()
         {
             InitializeComponent();
@@ -11,15 +11,29 @@ namespace H20RendiContoMensile
             buttons = new List<Button>() {
             button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11, button12
             };
+            foreach (Button mese in buttons)
+            {
+                mese.ForeColor = Color.Blue;
+
+
+            }
+
+            Color blueTenue = Color.FromArgb(191, 229, 255);
+            checkedListBox1.BackColor = blueTenue;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach (Button mese in buttons) {
+            foreach (Button mese in buttons)
+            {
                 mese.ForeColor = Color.Red;
-                if (mese == button1) 
+                if (mese == button1)
+                {
+                    mese.BackColor = Color.Yellow;
                     continue;
-                else mese.ForeColor = Color.Blue;
+                }
+                else { mese.ForeColor = Color.Blue; mese.BackColor = Color.White; }
 
             }
 
@@ -32,22 +46,42 @@ namespace H20RendiContoMensile
             {
                 mese.ForeColor = Color.Red;
                 if (mese == button2)
-                    continue;
-                else mese.ForeColor = Color.Blue;
+                {
 
+                    mese.BackColor = Color.Yellow;
+                    continue;
+                }
+                else { mese.ForeColor = Color.Blue; mese.BackColor = Color.White; }
             }
+
+
         }
+
+
+
+
+
+
+
 
         private void button3_Click(object sender, EventArgs e)
         {
             foreach (Button mese in buttons)
             {
-                mese.ForeColor = Color.Red;
-                if (mese == button3)
-                    continue;
-                else mese.ForeColor = Color.Blue;
+                {
+                    mese.ForeColor = Color.Red;
+                    if (mese == button3)
+                    {
+
+                        mese.BackColor = Color.Yellow;
+                        continue;
+                    }
+                    else { mese.ForeColor = Color.Blue; mese.BackColor = Color.White; }
+                }
 
             }
+
+
 
 
         }
@@ -56,11 +90,16 @@ namespace H20RendiContoMensile
         {
             foreach (Button mese in buttons)
             {
-                mese.ForeColor = Color.Red;
-                if (mese == button4)
-                    continue;
-                else mese.ForeColor = Color.Blue;
+                {
+                    mese.ForeColor = Color.Red;
+                    if (mese == button4)
+                    {
 
+                        mese.BackColor = Color.Yellow;
+                        continue;
+                    }
+                    else { mese.ForeColor = Color.Blue; mese.BackColor = Color.White; }
+                }
             }
         }
 
@@ -68,11 +107,16 @@ namespace H20RendiContoMensile
         {
             foreach (Button mese in buttons)
             {
-                mese.ForeColor = Color.Red;
-                if (mese == button5)
-                    continue;
-                else mese.ForeColor = Color.Blue;
+                {
+                    mese.ForeColor = Color.Red;
+                    if (mese == button5)
+                    {
 
+                        mese.BackColor = Color.Yellow;
+                        continue;
+                    }
+                    else { mese.ForeColor = Color.Blue; mese.BackColor = Color.White; }
+                }
             }
         }
 
@@ -80,10 +124,16 @@ namespace H20RendiContoMensile
         {
             foreach (Button mese in buttons)
             {
-                mese.ForeColor = Color.Red;
-                if (mese == button6)
-                    continue;
-                else mese.ForeColor = Color.Blue;
+                {
+                    mese.ForeColor = Color.Red;
+                    if (mese == button6)
+                    {
+
+                        mese.BackColor = Color.Yellow;
+                        continue;
+                    }
+                    else { mese.ForeColor = Color.Blue; mese.BackColor = Color.White; }
+                }
 
             }
         }
@@ -92,10 +142,16 @@ namespace H20RendiContoMensile
         {
             foreach (Button mese in buttons)
             {
-                mese.ForeColor = Color.Red;
-                if (mese == button7)
-                    continue;
-                else mese.ForeColor = Color.Blue;
+                {
+                    mese.ForeColor = Color.Red;
+                    if (mese == button7)
+                    {
+
+                        mese.BackColor = Color.Yellow;
+                        continue;
+                    }
+                    else { mese.ForeColor = Color.Blue; mese.BackColor = Color.White; }
+                }
 
             }
         }
@@ -104,10 +160,16 @@ namespace H20RendiContoMensile
         {
             foreach (Button mese in buttons)
             {
-                mese.ForeColor = Color.Red;
-                if (mese == button8)
-                    continue;
-                else mese.ForeColor = Color.Blue;
+                {
+                    mese.ForeColor = Color.Red;
+                    if (mese == button8)
+                    {
+
+                        mese.BackColor = Color.Yellow;
+                        continue;
+                    }
+                    else { mese.ForeColor = Color.Blue; mese.BackColor = Color.White; }
+                }
 
             }
         }
@@ -116,10 +178,16 @@ namespace H20RendiContoMensile
         {
             foreach (Button mese in buttons)
             {
-                mese.ForeColor = Color.Red;
-                if (mese == button9)
-                    continue;
-                else mese.ForeColor = Color.Blue;
+                {
+                    mese.ForeColor = Color.Red;
+                    if (mese == button9)
+                    {
+
+                        mese.BackColor = Color.Yellow;
+                        continue;
+                    }
+                    else { mese.ForeColor = Color.Blue; mese.BackColor = Color.White; }
+                }
 
             }
         }
@@ -128,10 +196,16 @@ namespace H20RendiContoMensile
         {
             foreach (Button mese in buttons)
             {
-                mese.ForeColor = Color.Red;
-                if (mese == button10)
-                    continue;
-                else mese.ForeColor = Color.Blue;
+                {
+                    mese.ForeColor = Color.Red;
+                    if (mese == button10)
+                    {
+
+                        mese.BackColor = Color.Yellow;
+                        continue;
+                    }
+                    else { mese.ForeColor = Color.Blue; mese.BackColor = Color.White; }
+                }
 
             }
         }
@@ -140,10 +214,16 @@ namespace H20RendiContoMensile
         {
             foreach (Button mese in buttons)
             {
-                mese.ForeColor = Color.Red;
-                if (mese == button11)
-                    continue;
-                else mese.ForeColor = Color.Blue;
+                {
+                    mese.ForeColor = Color.Red;
+                    if (mese == button11)
+                    {
+
+                        mese.BackColor = Color.Yellow;
+                        continue;
+                    }
+                    else { mese.ForeColor = Color.Blue; mese.BackColor = Color.White; }
+                }
 
             }
         }
@@ -152,12 +232,46 @@ namespace H20RendiContoMensile
         {
             foreach (Button mese in buttons)
             {
-                mese.ForeColor = Color.Red;
-                if (mese == button12)
-                    continue;
-                else mese.ForeColor = Color.Blue;
+                {
+                    mese.ForeColor = Color.Red;
+                    if (mese == button12)
+                    {
+
+                        mese.BackColor = Color.Yellow;
+                        continue;
+                    }
+                    else { mese.ForeColor = Color.Blue; mese.BackColor = Color.White; }
+                }
 
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Color blueTenue = Color.FromArgb(191, 229, 255);
+            this.BackColor = blueTenue;
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBoxCMD_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
