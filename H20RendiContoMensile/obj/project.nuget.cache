@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EdBuxMPx5nI=",
+  "dgSpecHash": "iu0cWJ3gMC8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\H20RendiContoMensile.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\Hirad\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.6\\microsoft.entityframeworkcore.abstractions.9.0.6.nupkg.sha512",
     "C:\\Users\\Hirad\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.6\\microsoft.entityframeworkcore.analyzers.9.0.6.nupkg.sha512",
     "C:\\Users\\Hirad\\.nuget\\packages\\microsoft.entityframeworkcore.design\\9.0.6\\microsoft.entityframeworkcore.design.9.0.6.nupkg.sha512",
+    "C:\\Users\\Hirad\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\9.0.6\\microsoft.entityframeworkcore.inmemory.9.0.6.nupkg.sha512",
     "C:\\Users\\Hirad\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.6\\microsoft.entityframeworkcore.relational.9.0.6.nupkg.sha512",
     "C:\\Users\\Hirad\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\9.0.6\\microsoft.entityframeworkcore.sqlserver.9.0.6.nupkg.sha512",
     "C:\\Users\\Hirad\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\9.0.6\\microsoft.entityframeworkcore.tools.9.0.6.nupkg.sha512",

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>H20RendiContoMensile</id>
+    <version>1.0.0</version>
+    <authors>H20RendiContoMensile</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="16cca11d274d9c043ba556338b796853783b32b9" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0">
+        <dependency id="Microsoft.EntityFrameworkCore" version="9.0.6" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.InMemory" version="9.0.6" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="9.0.6" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\H20RendiContoMensile.runtimeconfig.json" target="lib\net8.0-windows7.0\H20RendiContoMensile.runtimeconfig.json" />
+    <file src="C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\H20RendiContoMensile.dll" target="lib\net8.0-windows7.0\H20RendiContoMensile.dll" />
+  </files>
+</package>

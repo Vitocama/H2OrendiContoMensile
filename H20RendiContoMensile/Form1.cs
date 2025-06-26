@@ -19,7 +19,7 @@ namespace H20RendiContoMensile
             }
 
             Color blueTenue = Color.FromArgb(191, 229, 255);
-            checkedListBox1.BackColor = blueTenue;
+            comboBoxRicerca.SelectedItem = "Cmd";
 
         }
 

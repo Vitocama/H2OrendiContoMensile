@@ -44,23 +44,43 @@
             textBoxCMD = new TextBox();
             labelCMD = new Label();
             panel2 = new Panel();
-            textBoxNome = new TextBox();
-            labelNome = new Label();
-            panel3 = new Panel();
             textBoxCognome = new TextBox();
             labelCognome = new Label();
+            panel3 = new Panel();
+            textBoxNascita = new TextBox();
+            labelDataNascita = new Label();
             panel4 = new Panel();
             textBox1 = new TextBox();
             label1 = new Label();
-            checkedListBox1 = new CheckedListBox();
             panel5 = new Panel();
             dataGridView1 = new DataGridView();
+            panel6 = new Panel();
+            textBoxContatto = new TextBox();
+            labelContatto = new Label();
+            panel7 = new Panel();
+            textBoxEmail = new TextBox();
+            labelEmail = new Label();
+            panel8 = new Panel();
+            textBoxResidenza = new TextBox();
+            labelResidenza = new Label();
+            panel9 = new Panel();
+            textBoxLuogoNascita = new TextBox();
+            labelLuogoDiNascita = new Label();
+            panel10 = new Panel();
+            textBoxNome = new TextBox();
+            labelNome = new Label();
+            comboBoxRicerca = new ComboBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel6.SuspendLayout();
+            panel7.SuspendLayout();
+            panel8.SuspendLayout();
+            panel9.SuspendLayout();
+            panel10.SuspendLayout();
             SuspendLayout();
             // 
             // button1
@@ -211,41 +231,16 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(textBoxNome);
-            panel2.Controls.Add(labelNome);
+            panel2.Controls.Add(textBoxCognome);
+            panel2.Controls.Add(labelCognome);
             panel2.Location = new Point(12, 325);
             panel2.Name = "panel2";
             panel2.Size = new Size(140, 71);
             panel2.TabIndex = 21;
             // 
-            // textBoxNome
-            // 
-            textBoxNome.Location = new Point(0, 35);
-            textBoxNome.Name = "textBoxNome";
-            textBoxNome.Size = new Size(125, 27);
-            textBoxNome.TabIndex = 16;
-            // 
-            // labelNome
-            // 
-            labelNome.AutoSize = true;
-            labelNome.Location = new Point(0, 12);
-            labelNome.Name = "labelNome";
-            labelNome.Size = new Size(50, 20);
-            labelNome.TabIndex = 13;
-            labelNome.Text = "Nome";
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(textBoxCognome);
-            panel3.Controls.Add(labelCognome);
-            panel3.Location = new Point(12, 481);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(140, 67);
-            panel3.TabIndex = 22;
-            // 
             // textBoxCognome
             // 
-            textBoxCognome.Location = new Point(0, 33);
+            textBoxCognome.Location = new Point(0, 35);
             textBoxCognome.Name = "textBoxCognome";
             textBoxCognome.Size = new Size(125, 27);
             textBoxCognome.TabIndex = 16;
@@ -253,24 +248,49 @@
             // labelCognome
             // 
             labelCognome.AutoSize = true;
-            labelCognome.Location = new Point(0, 10);
+            labelCognome.Location = new Point(0, 12);
             labelCognome.Name = "labelCognome";
             labelCognome.Size = new Size(74, 20);
             labelCognome.TabIndex = 13;
             labelCognome.Text = "Cognome";
             // 
+            // panel3
+            // 
+            panel3.Controls.Add(textBoxNascita);
+            panel3.Controls.Add(labelDataNascita);
+            panel3.Location = new Point(12, 402);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(140, 67);
+            panel3.TabIndex = 22;
+            // 
+            // textBoxNascita
+            // 
+            textBoxNascita.Location = new Point(0, 33);
+            textBoxNascita.Name = "textBoxNascita";
+            textBoxNascita.Size = new Size(125, 27);
+            textBoxNascita.TabIndex = 16;
+            // 
+            // labelDataNascita
+            // 
+            labelDataNascita.AutoSize = true;
+            labelDataNascita.Location = new Point(0, 10);
+            labelDataNascita.Name = "labelDataNascita";
+            labelDataNascita.Size = new Size(111, 20);
+            labelDataNascita.TabIndex = 13;
+            labelDataNascita.Text = "Data di Nascita";
+            // 
             // panel4
             // 
             panel4.Controls.Add(textBox1);
             panel4.Controls.Add(label1);
-            panel4.Location = new Point(951, 3);
+            panel4.Location = new Point(748, 0);
             panel4.Name = "panel4";
             panel4.Size = new Size(136, 61);
             panel4.TabIndex = 23;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(0, 34);
+            textBox1.Location = new Point(3, 31);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(125, 27);
             textBox1.TabIndex = 16;
@@ -283,17 +303,6 @@
             label1.Size = new Size(46, 20);
             label1.TabIndex = 13;
             label1.Text = "Cerca";
-            // 
-            // checkedListBox1
-            // 
-            checkedListBox1.BorderStyle = BorderStyle.None;
-            checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Items.AddRange(new object[] { "Cmd", "Nome", "Cognome" });
-            checkedListBox1.Location = new Point(1093, 3);
-            checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(150, 66);
-            checkedListBox1.TabIndex = 24;
-            checkedListBox1.SelectedIndexChanged += checkedListBox1_SelectedIndexChanged;
             // 
             // panel5
             // 
@@ -325,15 +334,154 @@
             dataGridView1.TabIndex = 26;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
+            // panel6
+            // 
+            panel6.Controls.Add(textBoxContatto);
+            panel6.Controls.Add(labelContatto);
+            panel6.Location = new Point(1147, 402);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(140, 67);
+            panel6.TabIndex = 27;
+            // 
+            // textBoxContatto
+            // 
+            textBoxContatto.Location = new Point(0, 34);
+            textBoxContatto.Name = "textBoxContatto";
+            textBoxContatto.Size = new Size(125, 27);
+            textBoxContatto.TabIndex = 16;
+            // 
+            // labelContatto
+            // 
+            labelContatto.AutoSize = true;
+            labelContatto.Location = new Point(3, 11);
+            labelContatto.Name = "labelContatto";
+            labelContatto.Size = new Size(67, 20);
+            labelContatto.TabIndex = 13;
+            labelContatto.Text = "Contatto";
+            // 
+            // panel7
+            // 
+            panel7.Controls.Add(textBoxEmail);
+            panel7.Controls.Add(labelEmail);
+            panel7.Location = new Point(1147, 329);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(140, 67);
+            panel7.TabIndex = 21;
+            // 
+            // textBoxEmail
+            // 
+            textBoxEmail.Location = new Point(0, 34);
+            textBoxEmail.Name = "textBoxEmail";
+            textBoxEmail.Size = new Size(125, 27);
+            textBoxEmail.TabIndex = 16;
+            // 
+            // labelEmail
+            // 
+            labelEmail.AutoSize = true;
+            labelEmail.Location = new Point(3, 11);
+            labelEmail.Name = "labelEmail";
+            labelEmail.Size = new Size(46, 20);
+            labelEmail.TabIndex = 13;
+            labelEmail.Text = "Email";
+            // 
+            // panel8
+            // 
+            panel8.Controls.Add(textBoxResidenza);
+            panel8.Controls.Add(labelResidenza);
+            panel8.Location = new Point(1147, 251);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(140, 67);
+            panel8.TabIndex = 21;
+            // 
+            // textBoxResidenza
+            // 
+            textBoxResidenza.Location = new Point(0, 34);
+            textBoxResidenza.Name = "textBoxResidenza";
+            textBoxResidenza.Size = new Size(125, 27);
+            textBoxResidenza.TabIndex = 16;
+            // 
+            // labelResidenza
+            // 
+            labelResidenza.AutoSize = true;
+            labelResidenza.Location = new Point(3, 11);
+            labelResidenza.Name = "labelResidenza";
+            labelResidenza.Size = new Size(76, 20);
+            labelResidenza.TabIndex = 13;
+            labelResidenza.Text = "Residenza";
+            // 
+            // panel9
+            // 
+            panel9.Controls.Add(textBoxLuogoNascita);
+            panel9.Controls.Add(labelLuogoDiNascita);
+            panel9.Location = new Point(1147, 173);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(140, 67);
+            panel9.TabIndex = 21;
+            // 
+            // textBoxLuogoNascita
+            // 
+            textBoxLuogoNascita.Location = new Point(0, 34);
+            textBoxLuogoNascita.Name = "textBoxLuogoNascita";
+            textBoxLuogoNascita.Size = new Size(125, 27);
+            textBoxLuogoNascita.TabIndex = 16;
+            // 
+            // labelLuogoDiNascita
+            // 
+            labelLuogoDiNascita.AutoSize = true;
+            labelLuogoDiNascita.Location = new Point(3, 11);
+            labelLuogoDiNascita.Name = "labelLuogoDiNascita";
+            labelLuogoDiNascita.Size = new Size(121, 20);
+            labelLuogoDiNascita.TabIndex = 13;
+            labelLuogoDiNascita.Text = "Luogo di Nascita";
+            // 
+            // panel10
+            // 
+            panel10.Controls.Add(textBoxNome);
+            panel10.Controls.Add(labelNome);
+            panel10.Location = new Point(12, 251);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(140, 67);
+            panel10.TabIndex = 21;
+            // 
+            // textBoxNome
+            // 
+            textBoxNome.Location = new Point(0, 34);
+            textBoxNome.Name = "textBoxNome";
+            textBoxNome.Size = new Size(125, 27);
+            textBoxNome.TabIndex = 16;
+            // 
+            // labelNome
+            // 
+            labelNome.AutoSize = true;
+            labelNome.Location = new Point(3, 11);
+            labelNome.Name = "labelNome";
+            labelNome.Size = new Size(50, 20);
+            labelNome.TabIndex = 13;
+            labelNome.Text = "Nome";
+            // 
+            // comboBoxRicerca
+            // 
+            comboBoxRicerca.FormattingEnabled = true;
+            comboBoxRicerca.Items.AddRange(new object[] { "Cmd", "Nome", "Cognome", "Data di Nascita", "Luogo di Nascita", "Residenza", "Email", "Contatto" });
+            comboBoxRicerca.Location = new Point(928, 3);
+            comboBoxRicerca.Name = "comboBoxRicerca";
+            comboBoxRicerca.Size = new Size(151, 28);
+            comboBoxRicerca.TabIndex = 28;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PowderBlue;
-            ClientSize = new Size(1343, 592);
+            ClientSize = new Size(1505, 592);
+            Controls.Add(comboBoxRicerca);
+            Controls.Add(panel7);
+            Controls.Add(panel8);
+            Controls.Add(panel9);
+            Controls.Add(panel10);
+            Controls.Add(panel6);
             Controls.Add(dataGridView1);
             Controls.Add(panel5);
-            Controls.Add(checkedListBox1);
             Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel2);
@@ -352,6 +500,16 @@
             panel4.PerformLayout();
             panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            panel9.ResumeLayout(false);
+            panel9.PerformLayout();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -373,16 +531,32 @@
         private TextBox textBoxCMD;
         private Label labelCMD;
         private Panel panel2;
-        private TextBox textBoxNome;
-        private Label labelNome;
-        private Panel panel3;
         private TextBox textBoxCognome;
         private Label labelCognome;
+        private Panel panel3;
+        private TextBox textBoxNascita;
+        private Label labelDataNascita;
         private Panel panel4;
         private TextBox textBox1;
         private Label label1;
-        private CheckedListBox checkedListBox1;
+        private CheckedListBox checkedListBoxRicerca;
         private Panel panel5;
         private DataGridView dataGridView1;
+        private Panel panel6;
+        private TextBox textBoxContatto;
+        private Label labelContatto;
+        private Panel panel7;
+        private TextBox textBoxEmail;
+        private Label labelEmail;
+        private Panel panel8;
+        private TextBox textBoxResidenza;
+        private Label labelResidenza;
+        private Panel panel9;
+        private TextBox textBoxLuogoNascita;
+        private Label labelLuogoDiNascita;
+        private Panel panel10;
+        private TextBox textBoxNome;
+        private Label labelNome;
+        private ComboBox comboBoxRicerca;
     }
 }

@@ -141,3 +141,4 @@ C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\b
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.csproj.AssemblyReference.cache
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20Rendi.455E617B.Up2Date
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.InMemory.dll
