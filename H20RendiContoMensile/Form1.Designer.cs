@@ -50,6 +50,7 @@
             textBoxNascita = new TextBox();
             labelDataNascita = new Label();
             panel4 = new Panel();
+            comboBoxRicerca = new ComboBox();
             textBox1 = new TextBox();
             label1 = new Label();
             panel5 = new Panel();
@@ -69,7 +70,7 @@
             panel10 = new Panel();
             textBoxNome = new TextBox();
             labelNome = new Label();
-            comboBoxRicerca = new ComboBox();
+            button13 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -281,12 +282,22 @@
             // 
             // panel4
             // 
+            panel4.Controls.Add(comboBoxRicerca);
             panel4.Controls.Add(textBox1);
             panel4.Controls.Add(label1);
-            panel4.Location = new Point(748, 0);
+            panel4.Location = new Point(872, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(136, 61);
+            panel4.Size = new Size(324, 61);
             panel4.TabIndex = 23;
+            // 
+            // comboBoxRicerca
+            // 
+            comboBoxRicerca.FormattingEnabled = true;
+            comboBoxRicerca.Items.AddRange(new object[] { "Cmd", "Nome", "Cognome", "Data di Nascita", "Luogo di Nascita", "Residenza", "Email", "Contatto" });
+            comboBoxRicerca.Location = new Point(173, 30);
+            comboBoxRicerca.Name = "comboBoxRicerca";
+            comboBoxRicerca.Size = new Size(151, 28);
+            comboBoxRicerca.TabIndex = 28;
             // 
             // textBox1
             // 
@@ -318,7 +329,7 @@
             panel5.Controls.Add(button8);
             panel5.Controls.Add(button10);
             panel5.Controls.Add(button9);
-            panel5.Location = new Point(12, 79);
+            panel5.Location = new Point(94, 67);
             panel5.Name = "panel5";
             panel5.Size = new Size(1102, 77);
             panel5.TabIndex = 25;
@@ -459,14 +470,15 @@
             labelNome.TabIndex = 13;
             labelNome.Text = "Nome";
             // 
-            // comboBoxRicerca
+            // button13
             // 
-            comboBoxRicerca.FormattingEnabled = true;
-            comboBoxRicerca.Items.AddRange(new object[] { "Cmd", "Nome", "Cognome", "Data di Nascita", "Luogo di Nascita", "Residenza", "Email", "Contatto" });
-            comboBoxRicerca.Location = new Point(928, 3);
-            comboBoxRicerca.Name = "comboBoxRicerca";
-            comboBoxRicerca.Size = new Size(151, 28);
-            comboBoxRicerca.TabIndex = 28;
+            button13.Location = new Point(12, 484);
+            button13.Name = "button13";
+            button13.Size = new Size(140, 64);
+            button13.TabIndex = 28;
+            button13.Text = "Lettura dei dati";
+            button13.UseVisualStyleBackColor = true;
+            button13.Click += button13_Click;
             // 
             // Form1
             // 
@@ -474,7 +486,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PowderBlue;
             ClientSize = new Size(1505, 592);
-            Controls.Add(comboBoxRicerca);
+            Controls.Add(button13);
             Controls.Add(panel7);
             Controls.Add(panel8);
             Controls.Add(panel9);
@@ -558,5 +570,6 @@
         private TextBox textBoxNome;
         private Label labelNome;
         private ComboBox comboBoxRicerca;
+        private Button button13;
     }
 }
