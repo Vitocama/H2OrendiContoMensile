@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace H20RendiContoMensile;
 
-public partial class Form1 : Form
+public partial class FormRicerca : Form
 {
 
     public string connectionString = "Data Source=ACER\\SQLEXPRESS;Initial Catalog=MMI;Integrated Security=True;Encrypt=False;";
@@ -16,7 +16,7 @@ public partial class Form1 : Form
     List<Button> buttons = new List<Button>();
     Connessione connessione = new Connessione();
 
-    public Form1()
+    public FormRicerca()
     {
         InitializeComponent();
         buttons = new List<Button>() {
@@ -287,29 +287,37 @@ public partial class Form1 : Form
     private void button13_Click(object sender, EventArgs e)
     {
 
-        if(string.IsNullOrEmpty(textBoxCerca.Text))
+        if (string.IsNullOrEmpty(textBoxCerca.Text))
 
 
         {
             dataGridView1.DataSource = connessione.Tablerendi_contoAnnuale_2025_Anagrafe();
         }
 
-    else
+        else
 
         {
 
 
-            DataTable dt = connessione.Tablerendi_contoAnnuale_2025_Anagrafe();
-         
-            DataTable ris=new DataTable();
-            string query = "%"+"c"+"%";
-            foreach (DataRow dr in dt.Rows)
+            DataTable date = connessione.Tablerendi_contoAnnuale_2025_Anagrafe();
+
+            DataTable ris = new DataTable();
+            string query = textBoxCerca.Text;
+
+            foreach (DataColumn col in date.Columns)
             {
-                if (dr["cmd"].ToString().Contains(query));
-                    
-            ris.Rows.Add(dr);
+                ris.Columns.Add(col.ColumnName, col.DataType);
+
             }
 
+
+            foreach (DataRow dr in date.Rows)
+            {
+                if (dr[comboBoxRicerca.Text].ToString().Contains(query))
+                    ris.ImportRow(dr);
+
+            }
+            dataGridView1.DataSource = ris;
 
 
 
@@ -333,5 +341,18 @@ public partial class Form1 : Form
     private void textBox1_TextChanged(object sender, EventArgs e)
     {
 
+    }
+
+    private void comboBoxRicerca_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
+
+    private void aggiungiDatiToolStripMenuItem1_Click(object sender, EventArgs e)
+    {
+        this.Hide();
+        FormAggiungiDati formAggiungiDati = new FormAggiungiDati();
+        formAggiungiDati.Show();
+        
     }
 }

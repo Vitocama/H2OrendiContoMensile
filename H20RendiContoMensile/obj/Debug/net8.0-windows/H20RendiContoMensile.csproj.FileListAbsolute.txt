@@ -3,7 +3,6 @@ C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\b
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\H20RendiContoMensile.runtimeconfig.json
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\H20RendiContoMensile.dll
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\H20RendiContoMensile.pdb
-C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.Form1.resources
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.csproj.GenerateResource.cache
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.AssemblyInfoInputs.cache
@@ -150,3 +149,5 @@ C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\b
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.FormAggiungiDati.resources
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.FormRicerca.resources
