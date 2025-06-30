@@ -1,14 +1,21 @@
-using Microsoft.Identity.Client;
 using System.Data;
+using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
+using System.Data.SqlClient;
+
+
+
+
 
 namespace H20RendiContoMensile;
 
 public partial class Form1 : Form
 {
 
-      public  string connectionString = "Data Source=ACER\\SQLEXPRESS;Initial Catalog=MMI;Integrated Security=True;Encrypt=False;";
+    public string connectionString = "Data Source=ACER\\SQLEXPRESS;Initial Catalog=MMI;Integrated Security=True;Encrypt=False;";
 
     List<Button> buttons = new List<Button>();
+    Connessione connessione = new Connessione();
+
     public Form1()
     {
         InitializeComponent();
@@ -279,11 +286,52 @@ public partial class Form1 : Form
 
     private void button13_Click(object sender, EventArgs e)
     {
-        string query = "select *\r\nfrom dbo.gi_province";
 
-        Connessione connessione=new Connessione();
-        
-        DataTable dt=   new DataTable();
-            dt=connessione.connessioneTable(connectionString,query);
+        if(string.IsNullOrEmpty(textBoxCerca.Text))
+
+
+        {
+            dataGridView1.DataSource = connessione.Tablerendi_contoAnnuale_2025_Anagrafe();
+        }
+
+    else
+
+        {
+
+
+            DataTable dt = connessione.Tablerendi_contoAnnuale_2025_Anagrafe();
+         
+            DataTable ris=new DataTable();
+            string query = "%"+"c"+"%";
+            foreach (DataRow dr in dt.Rows)
+            {
+                if (dr["cmd"].ToString().Contains(query));
+                    
+            ris.Rows.Add(dr);
+            }
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+    private void textBox1_TextChanged(object sender, EventArgs e)
+    {
+
     }
 }

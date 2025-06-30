@@ -51,7 +51,7 @@
             labelDataNascita = new Label();
             panel4 = new Panel();
             comboBoxRicerca = new ComboBox();
-            textBox1 = new TextBox();
+            textBoxCerca = new TextBox();
             label1 = new Label();
             panel5 = new Panel();
             dataGridView1 = new DataGridView();
@@ -70,7 +70,7 @@
             panel10 = new Panel();
             textBoxNome = new TextBox();
             labelNome = new Label();
-            button13 = new Button();
+            buttonLetturaDeiDati = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -283,7 +283,7 @@
             // panel4
             // 
             panel4.Controls.Add(comboBoxRicerca);
-            panel4.Controls.Add(textBox1);
+            panel4.Controls.Add(textBoxCerca);
             panel4.Controls.Add(label1);
             panel4.Location = new Point(872, 0);
             panel4.Name = "panel4";
@@ -299,12 +299,13 @@
             comboBoxRicerca.Size = new Size(151, 28);
             comboBoxRicerca.TabIndex = 28;
             // 
-            // textBox1
+            // textBoxCerca
             // 
-            textBox1.Location = new Point(3, 31);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 16;
+            textBoxCerca.Location = new Point(3, 31);
+            textBoxCerca.Name = "textBoxCerca";
+            textBoxCerca.Size = new Size(125, 27);
+            textBoxCerca.TabIndex = 16;
+            textBoxCerca.TextChanged += textBox1_TextChanged;
             // 
             // label1
             // 
@@ -470,15 +471,15 @@
             labelNome.TabIndex = 13;
             labelNome.Text = "Nome";
             // 
-            // button13
+            // buttonLetturaDeiDati
             // 
-            button13.Location = new Point(12, 484);
-            button13.Name = "button13";
-            button13.Size = new Size(140, 64);
-            button13.TabIndex = 28;
-            button13.Text = "Lettura dei dati";
-            button13.UseVisualStyleBackColor = true;
-            button13.Click += button13_Click;
+            buttonLetturaDeiDati.Location = new Point(12, 484);
+            buttonLetturaDeiDati.Name = "buttonLetturaDeiDati";
+            buttonLetturaDeiDati.Size = new Size(140, 64);
+            buttonLetturaDeiDati.TabIndex = 28;
+            buttonLetturaDeiDati.Text = "Lettura dei dati";
+            buttonLetturaDeiDati.UseVisualStyleBackColor = true;
+            buttonLetturaDeiDati.Click += button13_Click;
             // 
             // Form1
             // 
@@ -486,7 +487,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PowderBlue;
             ClientSize = new Size(1505, 592);
-            Controls.Add(button13);
+            Controls.Add(buttonLetturaDeiDati);
             Controls.Add(panel7);
             Controls.Add(panel8);
             Controls.Add(panel9);
@@ -549,7 +550,7 @@
         private TextBox textBoxNascita;
         private Label labelDataNascita;
         private Panel panel4;
-        private TextBox textBox1;
+        private TextBox textBoxCerca;
         private Label label1;
         private CheckedListBox checkedListBoxRicerca;
         private Panel panel5;
@@ -570,6 +571,6 @@
         private TextBox textBoxNome;
         private Label labelNome;
         private ComboBox comboBoxRicerca;
-        private Button button13;
+        private Button buttonLetturaDeiDati;
     }
 }

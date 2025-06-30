@@ -142,3 +142,11 @@ C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\b
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.csproj.AssemblyReference.cache
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20Rendi.455E617B.Up2Date
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\EntityFramework.SqlServer.dll
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\EntityFramework.dll
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
