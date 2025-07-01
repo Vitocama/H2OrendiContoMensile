@@ -181,15 +181,15 @@
             panel4.Controls.Add(comboBoxRicerca);
             panel4.Controls.Add(textBoxCerca);
             panel4.Controls.Add(label1);
-            panel4.Location = new Point(872, 0);
+            panel4.Location = new Point(862, 49);
             panel4.Name = "panel4";
-            panel4.Size = new Size(324, 61);
+            panel4.Size = new Size(329, 59);
             panel4.TabIndex = 23;
             // 
             // comboBoxRicerca
             // 
             comboBoxRicerca.FormattingEnabled = true;
-            comboBoxRicerca.Items.AddRange(new object[] { "Cmd", "Nome", "Cognome", "Data di Nascita", "Luogo di Nascita", "Residenza", "Email", "Contatto" });
+            comboBoxRicerca.Items.AddRange(new object[] { "", "Cmd", "Nome", "Cognome", "Data di Nascita", "Luogo di Nascita", "Residenza", "Email", "Contatto" });
             comboBoxRicerca.Location = new Point(173, 30);
             comboBoxRicerca.Name = "comboBoxRicerca";
             comboBoxRicerca.Size = new Size(151, 28);
@@ -227,9 +227,9 @@
             panel5.Controls.Add(button8);
             panel5.Controls.Add(button10);
             panel5.Controls.Add(button9);
-            panel5.Location = new Point(94, 67);
+            panel5.Location = new Point(108, 114);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1102, 77);
+            panel5.Size = new Size(1111, 75);
             panel5.TabIndex = 25;
             // 
             // menuStrip1
@@ -238,7 +238,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { aggiungiDatiToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1505, 28);
+            menuStrip1.Size = new Size(1445, 28);
             menuStrip1.TabIndex = 29;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -252,7 +252,7 @@
             // aggiungiDatiToolStripMenuItem1
             // 
             aggiungiDatiToolStripMenuItem1.Name = "aggiungiDatiToolStripMenuItem1";
-            aggiungiDatiToolStripMenuItem1.Size = new Size(224, 26);
+            aggiungiDatiToolStripMenuItem1.Size = new Size(181, 26);
             aggiungiDatiToolStripMenuItem1.Text = "aggiungi dati";
             aggiungiDatiToolStripMenuItem1.Click += aggiungiDatiToolStripMenuItem1_Click;
             // 
@@ -260,10 +260,10 @@
             // 
             dataGridView1.AllowUserToOrderColumns = true;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(193, 173);
+            dataGridView1.Location = new Point(193, 236);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(921, 375);
+            dataGridView1.Size = new Size(921, 312);
             dataGridView1.TabIndex = 26;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -275,13 +275,14 @@
             buttonLetturaDeiDati.TabIndex = 34;
             buttonLetturaDeiDati.Text = "Lettura dei dati";
             buttonLetturaDeiDati.UseVisualStyleBackColor = true;
+            buttonLetturaDeiDati.Click += buttonLetturaDeiDati_Click;
             // 
             // FormRicerca
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PowderBlue;
-            ClientSize = new Size(1505, 592);
+            ClientSize = new Size(1445, 592);
             Controls.Add(buttonLetturaDeiDati);
             Controls.Add(dataGridView1);
             Controls.Add(panel5);
@@ -290,7 +291,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MainMenuStrip = menuStrip1;
             Name = "FormRicerca";
-            Text = "Lettura dat";
+            Text = "Lettura dati";
             Load += Form1_Load;
             panel4.ResumeLayout(false);
             panel4.PerformLayout();

@@ -30,7 +30,15 @@ namespace H20RendiContoMensile
         private void letturaDatiToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-           
+
+
+        }
+
+        private void buttonLetturaDeiDati_Click(object sender, EventArgs e)
+        {
+            Connessione connessione = new Connessione();
+            System.Data.DataTable dataTable = new DataTable();
+            dataTable = connessione.Tablerendi_contoAnnuale_2025_Anagrafe();
             
         }
     }

@@ -54,9 +54,10 @@
             labelContatto = new Label();
             menuStrip1 = new MenuStrip();
             aggiungiDatiToolStripMenuItem = new ToolStripMenuItem();
-            aggiungiDatiToolStripMenuItem1 = new ToolStripMenuItem();
-            dataGridView1 = new DataGridView();
             letturaDatiToolStripMenuItem = new ToolStripMenuItem();
+            dataGridView1 = new DataGridView();
+            monthCalendar = new MonthCalendar();
+            buttonLetturaDeiDati = new Button();
             panel10.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -281,17 +282,17 @@
             // 
             // aggiungiDatiToolStripMenuItem
             // 
-            aggiungiDatiToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aggiungiDatiToolStripMenuItem1, letturaDatiToolStripMenuItem });
+            aggiungiDatiToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { letturaDatiToolStripMenuItem });
             aggiungiDatiToolStripMenuItem.Name = "aggiungiDatiToolStripMenuItem";
             aggiungiDatiToolStripMenuItem.Size = new Size(69, 24);
             aggiungiDatiToolStripMenuItem.Text = "pagine";
             // 
-            // aggiungiDatiToolStripMenuItem1
+            // letturaDatiToolStripMenuItem
             // 
-            aggiungiDatiToolStripMenuItem1.Name = "aggiungiDatiToolStripMenuItem1";
-            aggiungiDatiToolStripMenuItem1.Size = new Size(224, 26);
-            aggiungiDatiToolStripMenuItem1.Text = "Aggiunta Dati";
-            aggiungiDatiToolStripMenuItem1.Click += aggiungiDatiToolStripMenuItem1_Click;
+            letturaDatiToolStripMenuItem.Name = "letturaDatiToolStripMenuItem";
+            letturaDatiToolStripMenuItem.Size = new Size(168, 26);
+            letturaDatiToolStripMenuItem.Text = "Lettura dati";
+            letturaDatiToolStripMenuItem.Click += letturaDatiToolStripMenuItem_Click;
             // 
             // dataGridView1
             // 
@@ -300,21 +301,36 @@
             dataGridView1.Location = new Point(191, 79);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(912, 374);
+            dataGridView1.Size = new Size(912, 295);
             dataGridView1.TabIndex = 38;
             // 
-            // letturaDatiToolStripMenuItem
+            // monthCalendar
             // 
-            letturaDatiToolStripMenuItem.Name = "letturaDatiToolStripMenuItem";
-            letturaDatiToolStripMenuItem.Size = new Size(224, 26);
-            letturaDatiToolStripMenuItem.Text = "Lettura dati";
-            letturaDatiToolStripMenuItem.Click += letturaDatiToolStripMenuItem_Click;
+            monthCalendar.BackColor = Color.PowderBlue;
+            monthCalendar.Location = new Point(191, 398);
+            monthCalendar.MaxSelectionCount = 100000;
+            monthCalendar.MinDate = new DateTime(2025, 1, 1, 0, 0, 0, 0);
+            monthCalendar.Name = "monthCalendar";
+            monthCalendar.TabIndex = 39;
+            // 
+            // buttonLetturaDeiDati
+            // 
+            buttonLetturaDeiDati.Location = new Point(12, 398);
+            buttonLetturaDeiDati.Name = "buttonLetturaDeiDati";
+            buttonLetturaDeiDati.Size = new Size(140, 64);
+            buttonLetturaDeiDati.TabIndex = 40;
+            buttonLetturaDeiDati.Text = "Inserimento dati";
+            buttonLetturaDeiDati.UseVisualStyleBackColor = true;
+            buttonLetturaDeiDati.Click += buttonLetturaDeiDati_Click;
             // 
             // FormAggiungiDati
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.PowderBlue;
             ClientSize = new Size(1364, 599);
+            Controls.Add(buttonLetturaDeiDati);
+            Controls.Add(monthCalendar);
             Controls.Add(dataGridView1);
             Controls.Add(menuStrip1);
             Controls.Add(panel7);
@@ -379,8 +395,9 @@
         private Label labelContatto;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem aggiungiDatiToolStripMenuItem;
-        private ToolStripMenuItem aggiungiDatiToolStripMenuItem1;
         private DataGridView dataGridView1;
         private ToolStripMenuItem letturaDatiToolStripMenuItem;
+        private MonthCalendar monthCalendar;
+        private Button buttonLetturaDeiDati;
     }
 }

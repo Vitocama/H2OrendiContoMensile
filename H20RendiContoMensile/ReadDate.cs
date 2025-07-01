@@ -353,6 +353,50 @@ public partial class FormRicerca : Form
         this.Hide();
         FormAggiungiDati formAggiungiDati = new FormAggiungiDati();
         formAggiungiDati.Show();
+
+    }
+
+    private void buttonLetturaDeiDati_Click(object sender, EventArgs e)
+    { 
+        Connessione connessione = new Connessione();
+
+        System.Data.DataTable dati = connessione.Tablerendi_contoAnnuale_2025_Anagrafe();
+        if (string.IsNullOrEmpty(textBoxCerca.Text) || string.IsNullOrEmpty(comboBoxRicerca.Text))
+        {
+
+
+
+            dataGridView1.DataSource = dati;
+
+        }
+       
+        else
+        {
+            DataTable dt = new DataTable();
+            foreach (DataColumn colonna in dati.Columns)
+            {
+
+                DataColumn col = new DataColumn(colonna.ColumnName, colonna.DataType);
+
+
+                dt.Columns.Add(col);
+
+                
+
+
+
+
+
+            }
+            foreach (DataRow dr in dati.Rows)
+            {
+                if (dr[comboBoxRicerca.Text].ToString().Contains(textBoxCerca.Text))
+                    dt.ImportRow(dr);
+
+
+            }
+            dataGridView1.DataSource = dt;
+        }
         
     }
 }
