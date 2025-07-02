@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "gNCaC4lEEqg=",
+  "dgSpecHash": "el07CmmPNbA=",
   "success": true,
   "projectFilePath": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\H20RendiContoMensile.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hirad\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Hirad\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\Hirad\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\Hirad\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512",
     "C:\\Users\\Hirad\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Hirad\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

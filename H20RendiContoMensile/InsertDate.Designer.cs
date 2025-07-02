@@ -32,7 +32,7 @@
             textBoxNome = new TextBox();
             labelNome = new Label();
             panel3 = new Panel();
-            textBoxNascita = new TextBox();
+            dateTimePickerNascita = new DateTimePicker();
             labelDataNascita = new Label();
             panel2 = new Panel();
             textBoxCognome = new TextBox();
@@ -58,6 +58,7 @@
             dataGridView1 = new DataGridView();
             monthCalendar = new MonthCalendar();
             buttonLetturaDeiDati = new Button();
+            sqlDataAdapter1 = new Microsoft.Data.SqlClient.SqlDataAdapter();
             panel10.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -76,14 +77,14 @@
             panel10.Controls.Add(labelNome);
             panel10.Location = new Point(12, 152);
             panel10.Name = "panel10";
-            panel10.Size = new Size(140, 67);
+            panel10.Size = new Size(269, 67);
             panel10.TabIndex = 30;
             // 
             // textBoxNome
             // 
             textBoxNome.Location = new Point(0, 34);
             textBoxNome.Name = "textBoxNome";
-            textBoxNome.Size = new Size(125, 27);
+            textBoxNome.Size = new Size(256, 27);
             textBoxNome.TabIndex = 16;
             // 
             // labelNome
@@ -97,19 +98,20 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(textBoxNascita);
+            panel3.Controls.Add(dateTimePickerNascita);
             panel3.Controls.Add(labelDataNascita);
             panel3.Location = new Point(12, 303);
             panel3.Name = "panel3";
-            panel3.Size = new Size(140, 67);
+            panel3.Size = new Size(269, 67);
             panel3.TabIndex = 32;
             // 
-            // textBoxNascita
+            // dateTimePickerNascita
             // 
-            textBoxNascita.Location = new Point(0, 33);
-            textBoxNascita.Name = "textBoxNascita";
-            textBoxNascita.Size = new Size(125, 27);
-            textBoxNascita.TabIndex = 16;
+            dateTimePickerNascita.Format = DateTimePickerFormat.Short;
+            dateTimePickerNascita.Location = new Point(6, 37);
+            dateTimePickerNascita.Name = "dateTimePickerNascita";
+            dateTimePickerNascita.Size = new Size(250, 27);
+            dateTimePickerNascita.TabIndex = 14;
             // 
             // labelDataNascita
             // 
@@ -126,14 +128,14 @@
             panel2.Controls.Add(labelCognome);
             panel2.Location = new Point(12, 226);
             panel2.Name = "panel2";
-            panel2.Size = new Size(140, 71);
+            panel2.Size = new Size(269, 71);
             panel2.TabIndex = 31;
             // 
             // textBoxCognome
             // 
             textBoxCognome.Location = new Point(0, 35);
             textBoxCognome.Name = "textBoxCognome";
-            textBoxCognome.Size = new Size(125, 27);
+            textBoxCognome.Size = new Size(256, 27);
             textBoxCognome.TabIndex = 16;
             // 
             // labelCognome
@@ -151,14 +153,14 @@
             panel1.Controls.Add(labelCMD);
             panel1.Location = new Point(12, 79);
             panel1.Name = "panel1";
-            panel1.Size = new Size(140, 67);
+            panel1.Size = new Size(269, 67);
             panel1.TabIndex = 29;
             // 
             // textBoxCMD
             // 
             textBoxCMD.Location = new Point(0, 34);
             textBoxCMD.Name = "textBoxCMD";
-            textBoxCMD.Size = new Size(125, 27);
+            textBoxCMD.Size = new Size(256, 27);
             textBoxCMD.TabIndex = 16;
             // 
             // labelCMD
@@ -286,6 +288,7 @@
             aggiungiDatiToolStripMenuItem.Name = "aggiungiDatiToolStripMenuItem";
             aggiungiDatiToolStripMenuItem.Size = new Size(69, 24);
             aggiungiDatiToolStripMenuItem.Text = "pagine";
+            aggiungiDatiToolStripMenuItem.Click += aggiungiDatiToolStripMenuItem_Click;
             // 
             // letturaDatiToolStripMenuItem
             // 
@@ -298,24 +301,25 @@
             // 
             dataGridView1.AllowUserToOrderColumns = true;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(191, 79);
+            dataGridView1.Location = new Point(297, 79);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(912, 295);
+            dataGridView1.Size = new Size(806, 374);
             dataGridView1.TabIndex = 38;
             // 
             // monthCalendar
             // 
             monthCalendar.BackColor = Color.PowderBlue;
-            monthCalendar.Location = new Point(191, 398);
+            monthCalendar.Location = new Point(12, 399);
             monthCalendar.MaxSelectionCount = 100000;
             monthCalendar.MinDate = new DateTime(2025, 1, 1, 0, 0, 0, 0);
             monthCalendar.Name = "monthCalendar";
             monthCalendar.TabIndex = 39;
+            monthCalendar.DateChanged += monthCalendar_DateChanged;
             // 
             // buttonLetturaDeiDati
             // 
-            buttonLetturaDeiDati.Location = new Point(12, 398);
+            buttonLetturaDeiDati.Location = new Point(558, 486);
             buttonLetturaDeiDati.Name = "buttonLetturaDeiDati";
             buttonLetturaDeiDati.Size = new Size(140, 64);
             buttonLetturaDeiDati.TabIndex = 40;
@@ -373,7 +377,6 @@
         private TextBox textBoxNome;
         private Label labelNome;
         private Panel panel3;
-        private TextBox textBoxNascita;
         private Label labelDataNascita;
         private Panel panel2;
         private TextBox textBoxCognome;
@@ -399,5 +402,7 @@
         private ToolStripMenuItem letturaDatiToolStripMenuItem;
         private MonthCalendar monthCalendar;
         private Button buttonLetturaDeiDati;
+        private Microsoft.Data.SqlClient.SqlDataAdapter sqlDataAdapter1;
+        private DateTimePicker dateTimePickerNascita;
     }
 }

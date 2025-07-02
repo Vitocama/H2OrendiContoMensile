@@ -357,7 +357,7 @@ public partial class FormRicerca : Form
     }
 
     private void buttonLetturaDeiDati_Click(object sender, EventArgs e)
-    { 
+    {
         Connessione connessione = new Connessione();
 
         System.Data.DataTable dati = connessione.Tablerendi_contoAnnuale_2025_Anagrafe();
@@ -369,7 +369,7 @@ public partial class FormRicerca : Form
             dataGridView1.DataSource = dati;
 
         }
-       
+
         else
         {
             DataTable dt = new DataTable();
@@ -381,7 +381,7 @@ public partial class FormRicerca : Form
 
                 dt.Columns.Add(col);
 
-                
+
 
 
 
@@ -397,6 +397,21 @@ public partial class FormRicerca : Form
             }
             dataGridView1.DataSource = dt;
         }
-        
+
+    }
+
+    private void button14_Click(object sender, EventArgs e)
+    {
+        Connessione connessione = new Connessione();
+
+        System.Data.DataTable dataTable = new DataTable();
+
+        dataTable = connessione.TableRendicontoAnnuale_2025();
+        dataGridView1.DataSource = dataTable;
+    }
+
+    private void aggiungiDatiToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+
     }
 }

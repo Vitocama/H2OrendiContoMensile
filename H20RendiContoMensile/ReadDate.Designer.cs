@@ -50,6 +50,7 @@
             aggiungiDatiToolStripMenuItem1 = new ToolStripMenuItem();
             dataGridView1 = new DataGridView();
             buttonLetturaDeiDati = new Button();
+            buttonAnagrafe = new Button();
             panel4.SuspendLayout();
             panel5.SuspendLayout();
             menuStrip1.SuspendLayout();
@@ -248,11 +249,12 @@
             aggiungiDatiToolStripMenuItem.Name = "aggiungiDatiToolStripMenuItem";
             aggiungiDatiToolStripMenuItem.Size = new Size(69, 24);
             aggiungiDatiToolStripMenuItem.Text = "pagine";
+            aggiungiDatiToolStripMenuItem.Click += aggiungiDatiToolStripMenuItem_Click;
             // 
             // aggiungiDatiToolStripMenuItem1
             // 
             aggiungiDatiToolStripMenuItem1.Name = "aggiungiDatiToolStripMenuItem1";
-            aggiungiDatiToolStripMenuItem1.Size = new Size(181, 26);
+            aggiungiDatiToolStripMenuItem1.Size = new Size(224, 26);
             aggiungiDatiToolStripMenuItem1.Text = "aggiungi dati";
             aggiungiDatiToolStripMenuItem1.Click += aggiungiDatiToolStripMenuItem1_Click;
             // 
@@ -277,12 +279,23 @@
             buttonLetturaDeiDati.UseVisualStyleBackColor = true;
             buttonLetturaDeiDati.Click += buttonLetturaDeiDati_Click;
             // 
+            // buttonAnagrafe
+            // 
+            buttonAnagrafe.Location = new Point(12, 236);
+            buttonAnagrafe.Name = "buttonAnagrafe";
+            buttonAnagrafe.Size = new Size(140, 64);
+            buttonAnagrafe.TabIndex = 36;
+            buttonAnagrafe.Text = "Anagrafe ";
+            buttonAnagrafe.UseVisualStyleBackColor = true;
+            buttonAnagrafe.Click += button14_Click;
+            // 
             // FormRicerca
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PowderBlue;
             ClientSize = new Size(1445, 592);
+            Controls.Add(buttonAnagrafe);
             Controls.Add(buttonLetturaDeiDati);
             Controls.Add(dataGridView1);
             Controls.Add(panel5);
@@ -328,5 +341,6 @@
         private ToolStripMenuItem aggiungiDatiToolStripMenuItem1;
         private DataGridView dataGridView1;
         private Button buttonLetturaDeiDati;
+        private Button buttonAnagrafe;
     }
 }

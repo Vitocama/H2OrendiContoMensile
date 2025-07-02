@@ -6,7 +6,7 @@ namespace H20RendiContoMensile
 {
     public class Connessione
     {
-        string connectionString = "Data Source=ACER\\SQLEXPRESS;Initial Catalog=MMI;Integrated Security=True;Encrypt=False;";
+       public string connectionString = "Data Source=ACER\\SQLEXPRESS;Initial Catalog=MMI;Integrated Security=True;Encrypt=False;";
         public DataTable TableGi_comuni_cap()
         {
             System.Data.DataTable DtGi_comuni_cap = new DataTable();
@@ -23,6 +23,24 @@ namespace H20RendiContoMensile
 
 
             return DtGi_comuni_cap;
+        }
+
+        public DataTable Anagrafe_Prova()
+        {
+            System.Data.DataTable Anagrafe_prova = new DataTable();
+
+            string query = "SELECT * FROM anagrafe";
+
+
+
+            using (SqlDataAdapter adapter = new SqlDataAdapter(query, connectionString))
+            {
+                adapter.Fill(Anagrafe_prova);
+            }
+
+
+
+            return Anagrafe_prova;
         }
 
 
@@ -137,6 +155,28 @@ namespace H20RendiContoMensile
                 }
 
                 return rendi_contoAnnuale_2025_Anagrafe;
+
+            }
+        }
+
+
+        public DataTable TableRendicontoAnnuale_2025()
+        {
+
+            {
+                DataTable rendi_contoAnnuale_2025 = new DataTable();
+
+                string query = "SELECT * FROM rendicontoAnnuale_2025";
+
+
+
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(query, connectionString))
+                {
+                    adapter.Fill(rendi_contoAnnuale_2025);
+                }
+
+                return rendi_contoAnnuale_2025;
 
             }
         }
