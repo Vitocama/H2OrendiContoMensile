@@ -41,21 +41,20 @@
           "SelectedChildIndex": 7,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "InsertDate.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\InsertDate.Designer.cs",
               "RelativeDocumentMoniker": "H20RendiContoMensile\\InsertDate.Designer.cs",
-              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\InsertDate.Designer.cs*",
-              "RelativeToolTip": "H20RendiContoMensile\\InsertDate.Designer.cs*",
+              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\InsertDate.Designer.cs",
+              "RelativeToolTip": "H20RendiContoMensile\\InsertDate.Designer.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAwA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T09:54:37.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+              "WhenOpened": "2025-07-03T09:54:37.185Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "H20RendiContoMensile\\RendiContoAnnuale2025Anagrafe.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T09:37:28.732Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T09:37:28.732Z"
             },
             {
               "$type": "Document",
@@ -80,8 +78,7 @@
               "RelativeToolTip": "H20RendiContoMensile\\Connessione.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T07:05:58.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T07:05:58.014Z"
             },
             {
               "$type": "Document",
@@ -105,20 +102,19 @@
               "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\ReadDate.cs [Progettazione]",
               "RelativeToolTip": "H20RendiContoMensile\\ReadDate.cs [Progettazione]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T20:57:05.797Z",
-              "EditorCaption": " [Progettazione]"
+              "WhenOpened": "2025-06-30T20:57:05.797Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InsertDate.cs [Progettazione]",
+              "Title": "InsertDate.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\InsertDate.cs",
               "RelativeDocumentMoniker": "H20RendiContoMensile\\InsertDate.cs",
-              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\InsertDate.cs [Progettazione]*",
-              "RelativeToolTip": "H20RendiContoMensile\\InsertDate.cs [Progettazione]*",
+              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\InsertDate.cs [Design]",
+              "RelativeToolTip": "H20RendiContoMensile\\InsertDate.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-30T20:56:14.955Z",
-              "EditorCaption": " [Progettazione]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -126,9 +122,9 @@
               "Title": "InsertDate.cs",
               "DocumentMoniker": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\InsertDate.cs",
               "RelativeDocumentMoniker": "H20RendiContoMensile\\InsertDate.cs",
-              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\InsertDate.cs*",
-              "RelativeToolTip": "H20RendiContoMensile\\InsertDate.cs*",
-              "ViewState": "AgIAALIAAAAAAAAAAAAmwMYAAAAkAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\InsertDate.cs",
+              "RelativeToolTip": "H20RendiContoMensile\\InsertDate.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAAmwL0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-30T13:10:22.46Z",
               "EditorCaption": ""

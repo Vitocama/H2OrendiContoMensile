@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("H20RendiContoMensile")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84f80767eed1da943ef320375b81240757c41cf8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98d4f8be80ac137655114ba8bc6d139518086cce")]
 [assembly: System.Reflection.AssemblyProductAttribute("H20RendiContoMensile")]
 [assembly: System.Reflection.AssemblyTitleAttribute("H20RendiContoMensile")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
