@@ -59,6 +59,7 @@
             monthCalendar = new MonthCalendar();
             buttonLetturaDeiDati = new Button();
             sqlDataAdapter1 = new Microsoft.Data.SqlClient.SqlDataAdapter();
+            buttonClear = new Button();
             panel10.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -162,6 +163,7 @@
             textBoxCMD.Name = "textBoxCMD";
             textBoxCMD.Size = new Size(256, 27);
             textBoxCMD.TabIndex = 16;
+            textBoxCMD.TextChanged += textBoxCMD_TextChanged_1;
             // 
             // labelCMD
             // 
@@ -319,7 +321,7 @@
             // 
             // buttonLetturaDeiDati
             // 
-            buttonLetturaDeiDati.Location = new Point(558, 486);
+            buttonLetturaDeiDati.Location = new Point(293, 475);
             buttonLetturaDeiDati.Name = "buttonLetturaDeiDati";
             buttonLetturaDeiDati.Size = new Size(140, 64);
             buttonLetturaDeiDati.TabIndex = 40;
@@ -327,12 +329,23 @@
             buttonLetturaDeiDati.UseVisualStyleBackColor = true;
             buttonLetturaDeiDati.Click += buttonLetturaDeiDati_Click;
             // 
+            // buttonClear
+            // 
+            buttonClear.Location = new Point(963, 486);
+            buttonClear.Name = "buttonClear";
+            buttonClear.Size = new Size(140, 64);
+            buttonClear.TabIndex = 41;
+            buttonClear.Text = "Clear Box";
+            buttonClear.UseVisualStyleBackColor = true;
+            buttonClear.Click += buttonClear_Click;
+            // 
             // FormAggiungiDati
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PowderBlue;
             ClientSize = new Size(1364, 599);
+            Controls.Add(buttonClear);
             Controls.Add(buttonLetturaDeiDati);
             Controls.Add(monthCalendar);
             Controls.Add(dataGridView1);
@@ -404,5 +417,6 @@
         private Button buttonLetturaDeiDati;
         private Microsoft.Data.SqlClient.SqlDataAdapter sqlDataAdapter1;
         private DateTimePicker dateTimePickerNascita;
+        private Button buttonClear;
     }
 }
