@@ -321,7 +321,7 @@
             // 
             // buttonLetturaDeiDati
             // 
-            buttonLetturaDeiDati.Location = new Point(293, 475);
+            buttonLetturaDeiDati.Location = new Point(297, 475);
             buttonLetturaDeiDati.Name = "buttonLetturaDeiDati";
             buttonLetturaDeiDati.Size = new Size(140, 64);
             buttonLetturaDeiDati.TabIndex = 40;
@@ -331,7 +331,7 @@
             // 
             // buttonClear
             // 
-            buttonClear.Location = new Point(963, 486);
+            buttonClear.Location = new Point(963, 475);
             buttonClear.Name = "buttonClear";
             buttonClear.Size = new Size(140, 64);
             buttonClear.TabIndex = 41;

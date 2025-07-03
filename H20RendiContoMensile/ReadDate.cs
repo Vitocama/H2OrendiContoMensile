@@ -1,3 +1,4 @@
+using Dapper;
 using System.Data;
 using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
 using System.Data.SqlClient;
@@ -14,7 +15,7 @@ public partial class FormRicerca : Form
     public string connectionString = "Data Source=ACER\\SQLEXPRESS;Initial Catalog=MMI;Integrated Security=True;Encrypt=False;";
 
     List<Button> buttons = new List<Button>();
-    Connessione connessione = new Connessione();
+ 
 
     public FormRicerca()
     {
@@ -291,7 +292,7 @@ public partial class FormRicerca : Form
 
 
         {
-            dataGridView1.DataSource = connessione.Tablerendi_contoAnnuale_2025_Anagrafe();
+            
         }
 
         else
@@ -299,25 +300,7 @@ public partial class FormRicerca : Form
         {
 
 
-            DataTable date = connessione.Tablerendi_contoAnnuale_2025_Anagrafe();
-
-            DataTable ris = new DataTable();
-            string query = textBoxCerca.Text;
-
-            foreach (DataColumn col in date.Columns)
-            {
-                ris.Columns.Add(col.ColumnName, col.DataType);
-
-            }
-
-
-            foreach (DataRow dr in date.Rows)
-            {
-                if (dr[comboBoxRicerca.Text].ToString().Contains(query))
-                    ris.ImportRow(dr);
-
-            }
-            dataGridView1.DataSource = ris;
+            
 
 
 
@@ -358,56 +341,47 @@ public partial class FormRicerca : Form
 
     private void buttonLetturaDeiDati_Click(object sender, EventArgs e)
     {
-        Connessione connessione = new Connessione();
+        string query = "SELECT * FROM rendicontoAnnuale_2025";
 
-        System.Data.DataTable dati = connessione.Tablerendi_contoAnnuale_2025_Anagrafe();
-        if (string.IsNullOrEmpty(textBoxCerca.Text) || string.IsNullOrEmpty(comboBoxRicerca.Text))
+        using(SqlConnection conn =new  SqlConnection(connectionString))
         {
+            conn.Open();
+           dataGridView1.DataSource= conn.Query<RendicontoAnnuale2025>(query, conn).ToList();;
 
-
-
-            dataGridView1.DataSource = dati;
-
-        }
-
-        else
-        {
-            DataTable dt = new DataTable();
-            foreach (DataColumn colonna in dati.Columns)
-            {
-
-                DataColumn col = new DataColumn(colonna.ColumnName, colonna.DataType);
-
-
-                dt.Columns.Add(col);
-
-
-
-
-
-
-
-            }
-            foreach (DataRow dr in dati.Rows)
-            {
-                if (dr[comboBoxRicerca.Text].ToString().Contains(textBoxCerca.Text))
-                    dt.ImportRow(dr);
-
-
-            }
-            dataGridView1.DataSource = dt;
         }
 
     }
 
     private void button14_Click(object sender, EventArgs e)
     {
-        Connessione connessione = new Connessione();
+        
 
-        System.Data.DataTable dataTable = new DataTable();
+     
+        if (string.IsNullOrEmpty(textBoxCerca.Text) || string.IsNullOrEmpty(comboBoxRicerca.Text))
+        {
 
-        dataTable = connessione.TableRendicontoAnnuale_2025();
-        dataGridView1.DataSource = dataTable;
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                dataGridView1.DataSource = conn.Query<RendiContoAnnuale2025Anagrafe>("SELECT * FROM rendi_contoAnnuale_2025_Anagrafe", conn);
+
+            }
+
+
+        }
+
+        else
+        {
+            string query = "SELECT * FROM rendi_contoAnnuale_2025_Anagrafe WHERE "+ comboBoxRicerca.Text+" like"+"'%"+textBoxCerca.Text+"%'";
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                dataGridView1.DataSource = conn.Query<RendiContoAnnuale2025Anagrafe>(query, conn);
+
+            }
+
+
+        }
     }
 
     private void aggiungiDatiToolStripMenuItem_Click(object sender, EventArgs e)

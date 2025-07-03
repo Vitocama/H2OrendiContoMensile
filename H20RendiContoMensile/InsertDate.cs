@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Microsoft.EntityFrameworkCore.Query.Internal;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,7 +19,7 @@ namespace H20RendiContoMensile
 {
     public partial class FormAggiungiDati : Form
     {
-        Connessione connessione = new Connessione();
+        string stringConnesion = "Data Source=ACER\\SQLEXPRESS;Initial Catalog=MMI;Integrated Security=True;Encrypt=False;";
         public FormAggiungiDati()
         {
             InitializeComponent();
@@ -44,25 +45,28 @@ namespace H20RendiContoMensile
 
         private void buttonLetturaDeiDati_Click(object sender, EventArgs e)
         {
-            Connessione connessione = new Connessione();
+          
             try
             {
-                using (var conn = new SqlConnection(connessione.connectionString))
+                using (var conn = new SqlConnection())
                 {
                     conn.Open();
 
                     string query = "select cmd from rendi_contoAnnuale_2025_Anagrafe where cmd = @cmd";
+                    
 
                     // Passi il parametro in un oggetto anonimo
                     var param = new { cmd = textBoxCMD.Text };
 
                     // Esegui la query, mappando i risultati in oggetti della classe rendi_contoAnnuale_2025_Anagrafe
                     var risultati = conn.Query<RendiContoAnnuale2025Anagrafe>(query, param).ToList();
+                     
+
                     if (risultati.Count > 0)
                     {
                         MessageBox.Show("errore di key");
-                        return;
 
+                        return;
                     }
                 }
             }
@@ -91,13 +95,18 @@ namespace H20RendiContoMensile
             {
                 if (endday.DayOfWeek == DayOfWeek.Sunday || startday.DayOfWeek == DayOfWeek.Saturday)
                 {
+                    startday = startday.AddDays(1);
                     continue;
                 }
                 else
+                { 
                     Numero_bottiglie++;
-                if (startday < endday)
                     startday = startday.AddDays(1);
-                else break;
+                }
+                if (startday == endday)
+                {
+                    break;
+                }  
             }
 
             try
@@ -114,7 +123,7 @@ namespace H20RendiContoMensile
            "EMAIL: " + textBoxEmail.Text + "\n" +
            "CONTATTO: " + textBoxContatto.Text + "\n" +
            "NUMERO DI BOTTIGLIE: " + Numero_bottiglie.ToString() +
-               "CONFERMI?";
+               "\nCONFERMI?";
                 DialogResult ris = MessageBox.Show(messaggio, "Dati Inseriti", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
 
 
@@ -128,19 +137,49 @@ namespace H20RendiContoMensile
     (@cmd, @nome, @cognome, @data_nascita, @luogo_di_nascita, @residenza, @email, @contatto)";
                     var tab = new { cmd = textBoxCMD.Text, nome = textBoxNome.Text, cognome = textBoxCognome.Text, data_nascita = dateTimePickerNascita.Text, luogo_di_nascita = textBoxLuogoNascita.Text, residenza = textBoxResidenza.Text, email = textBoxEmail.Text, contatto = textBoxContatto.Text };
 
-                    using (var connect = new SqlConnection(connessione.connectionString))
+                    using (var connect = new SqlConnection(stringConnesion))
                     {
                         connect.Open();
                         connect.Execute(query, tab);
+
+                       var tab1 = new { cmd = textBoxCMD.Text, Numero_bottiglie=Numero_bottiglie };
+
+                        
+                        query = "insert into rendicontoAnnuale_2025(cmd,Numero_bottiglie)values(@cmd,@Numero_bottiglie)";
+
+                        connect.Execute(query, tab1);
+                        MessageBox.Show("I dati sono stati caricati correttamente", "Conferma", MessageBoxButtons.OK);
                     }
+                    textBoxCMD.Clear();
+                    textBoxNome.Clear();
+                    textBoxCognome.Clear();
+                    textBoxLuogoNascita.Clear();
+                    textBoxResidenza.Clear();
+                    textBoxEmail.Clear();
+                    textBoxContatto.Clear();
                 }
                 else if (ris == System.Windows.Forms.DialogResult.No)
                 {
+                    textBoxCMD.Clear();
+                    textBoxNome.Clear();
+                    textBoxCognome.Clear();
+                    textBoxLuogoNascita.Clear();
+                    textBoxResidenza.Clear();
+                    textBoxEmail.Clear();
+                    textBoxContatto.Clear();
+                    MessageBox.Show("Operazione annullata", "Conferma", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 else
                 {
-
+                    MessageBox.Show("Operazione annullata", "Conferma", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    textBoxCMD.Clear();
+                    textBoxNome.Clear();
+                    textBoxCognome.Clear();
+                    textBoxLuogoNascita.Clear();
+                    textBoxResidenza.Clear();
+                    textBoxEmail.Clear();
+                    textBoxContatto.Clear();
                 }
 
 
@@ -153,7 +192,7 @@ namespace H20RendiContoMensile
                 MessageBox.Show("Errore nell'inserimento dei dati:\n" + ex.Message, "Errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            MessageBox.Show("I dati sono stati caricati correttamente", "Conferma", MessageBoxButtons.OK);
+            
 
 
 
