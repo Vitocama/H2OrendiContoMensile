@@ -1,6 +1,6 @@
 ﻿namespace H20RendiContoMensile
 {
-    partial class FormRicerca
+    partial class FormInsertDate
     {
         /// <summary>
         ///  Required designer variable.
@@ -48,6 +48,7 @@
             menuStrip1 = new MenuStrip();
             aggiungiDatiToolStripMenuItem = new ToolStripMenuItem();
             aggiungiDatiToolStripMenuItem1 = new ToolStripMenuItem();
+            litriSpettantiToolStripMenuItem = new ToolStripMenuItem();
             dataGridView1 = new DataGridView();
             buttonLetturaDeiDati = new Button();
             buttonAnagrafe = new Button();
@@ -239,13 +240,14 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { aggiungiDatiToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
+            menuStrip1.RenderMode = ToolStripRenderMode.System;
             menuStrip1.Size = new Size(1445, 28);
-            menuStrip1.TabIndex = 29;
+            menuStrip1.TabIndex = 15;
             menuStrip1.Text = "menuStrip1";
             // 
             // aggiungiDatiToolStripMenuItem
             // 
-            aggiungiDatiToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aggiungiDatiToolStripMenuItem1 });
+            aggiungiDatiToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { aggiungiDatiToolStripMenuItem1, litriSpettantiToolStripMenuItem });
             aggiungiDatiToolStripMenuItem.Name = "aggiungiDatiToolStripMenuItem";
             aggiungiDatiToolStripMenuItem.Size = new Size(69, 24);
             aggiungiDatiToolStripMenuItem.Text = "pagine";
@@ -257,6 +259,13 @@
             aggiungiDatiToolStripMenuItem1.Size = new Size(224, 26);
             aggiungiDatiToolStripMenuItem1.Text = "aggiungi dati";
             aggiungiDatiToolStripMenuItem1.Click += aggiungiDatiToolStripMenuItem1_Click;
+            // 
+            // litriSpettantiToolStripMenuItem
+            // 
+            litriSpettantiToolStripMenuItem.Name = "litriSpettantiToolStripMenuItem";
+            litriSpettantiToolStripMenuItem.Size = new Size(224, 26);
+            litriSpettantiToolStripMenuItem.Text = "Litri Spettanti";
+            litriSpettantiToolStripMenuItem.Click += litriSpettantiToolStripMenuItem_Click;
             // 
             // dataGridView1
             // 
@@ -289,7 +298,7 @@
             buttonAnagrafe.UseVisualStyleBackColor = true;
             buttonAnagrafe.Click += button14_Click;
             // 
-            // FormRicerca
+            // FormInsertDate
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -303,7 +312,7 @@
             Controls.Add(menuStrip1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MainMenuStrip = menuStrip1;
-            Name = "FormRicerca";
+            Name = "FormInsertDate";
             Text = "Lettura dati";
             Load += Form1_Load;
             panel4.ResumeLayout(false);
@@ -333,7 +342,7 @@
         private Panel panel4;
         private TextBox textBoxCerca;
         private Label label1;
-        private CheckedListBox checkedListBoxRicerca;
+   
         private Panel panel5;
         private ComboBox comboBoxRicerca;
         private MenuStrip menuStrip1;
@@ -342,5 +351,6 @@
         private DataGridView dataGridView1;
         private Button buttonLetturaDeiDati;
         private Button buttonAnagrafe;
+        private ToolStripMenuItem litriSpettantiToolStripMenuItem;
     }
 }

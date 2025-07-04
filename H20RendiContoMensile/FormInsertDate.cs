@@ -38,14 +38,14 @@ namespace H20RendiContoMensile
         private void letturaDatiToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FormRicerca formRicerca = new FormRicerca();
+            FormInsertDate formRicerca = new FormInsertDate();
             formRicerca.Show();
 
         }
 
         private void buttonLetturaDeiDati_Click(object sender, EventArgs e)
         {
-          
+            int Numero_bottiglie = 0;
             try
             {
                 using (var conn = new SqlConnection())
@@ -77,37 +77,7 @@ namespace H20RendiContoMensile
 
 
 
-            if (string.IsNullOrEmpty(textBoxCMD.Text))
-
-            {
-                MessageBox.Show("compilare CMD");
-                return;
-            }
-            int Numero_bottiglie = 0;
-
-
-            DateTime startday = monthCalendar.SelectionStart.Date;
-            DateTime endday = monthCalendar.SelectionEnd.Date;
-            TimeSpan difference = endday - startday;
-            int giorni = (int)difference.TotalDays + 1;
-
-            for (int i = 0; i < giorni; i++)
-            {
-                if (endday.DayOfWeek == DayOfWeek.Sunday || startday.DayOfWeek == DayOfWeek.Saturday)
-                {
-                    startday = startday.AddDays(1);
-                    continue;
-                }
-                else
-                { 
-                    Numero_bottiglie++;
-                    startday = startday.AddDays(1);
-                }
-                if (startday == endday)
-                {
-                    break;
-                }  
-            }
+           
 
             try
             {

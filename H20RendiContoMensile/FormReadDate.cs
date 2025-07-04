@@ -9,15 +9,15 @@ using System.Data.SqlClient;
 
 namespace H20RendiContoMensile;
 
-public partial class FormRicerca : Form
+public partial class FormInsertDate : Form
 {
 
     public string connectionString = "Data Source=ACER\\SQLEXPRESS;Initial Catalog=MMI;Integrated Security=True;Encrypt=False;";
 
     List<Button> buttons = new List<Button>();
- 
 
-    public FormRicerca()
+
+    public FormInsertDate()
     {
         InitializeComponent();
         buttons = new List<Button>() {
@@ -292,7 +292,7 @@ public partial class FormRicerca : Form
 
 
         {
-            
+
         }
 
         else
@@ -300,7 +300,7 @@ public partial class FormRicerca : Form
         {
 
 
-            
+
 
 
 
@@ -343,10 +343,10 @@ public partial class FormRicerca : Form
     {
         string query = "SELECT * FROM rendicontoAnnuale_2025";
 
-        using(SqlConnection conn =new  SqlConnection(connectionString))
+        using (SqlConnection conn = new SqlConnection(connectionString))
         {
             conn.Open();
-           dataGridView1.DataSource= conn.Query<RendicontoAnnuale2025>(query, conn).ToList();;
+            dataGridView1.DataSource = conn.Query<RendicontoAnnuale2025>(query, conn).ToList(); ;
 
         }
 
@@ -354,9 +354,9 @@ public partial class FormRicerca : Form
 
     private void button14_Click(object sender, EventArgs e)
     {
-        
 
-     
+
+
         if (string.IsNullOrEmpty(textBoxCerca.Text) || string.IsNullOrEmpty(comboBoxRicerca.Text))
         {
 
@@ -372,7 +372,7 @@ public partial class FormRicerca : Form
 
         else
         {
-            string query = "SELECT * FROM rendi_contoAnnuale_2025_Anagrafe WHERE "+ comboBoxRicerca.Text+" like"+"'%"+textBoxCerca.Text+"%'";
+            string query = "SELECT * FROM rendi_contoAnnuale_2025_Anagrafe WHERE " + comboBoxRicerca.Text + " like" + "'%" + textBoxCerca.Text + "%'";
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 conn.Open();
@@ -387,5 +387,15 @@ public partial class FormRicerca : Form
     private void aggiungiDatiToolStripMenuItem_Click(object sender, EventArgs e)
     {
 
+    }
+
+    private void litriSpettantiToolStripMenuItem_Click(object sender, EventArgs e)
+    {   
+        this.Hide();
+        FormH20 formH20 = new FormH20();
+        formH20.Show();
+
+        
+       
     }
 }

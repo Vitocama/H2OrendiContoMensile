@@ -56,7 +56,6 @@
             aggiungiDatiToolStripMenuItem = new ToolStripMenuItem();
             letturaDatiToolStripMenuItem = new ToolStripMenuItem();
             dataGridView1 = new DataGridView();
-            monthCalendar = new MonthCalendar();
             buttonLetturaDeiDati = new Button();
             sqlDataAdapter1 = new Microsoft.Data.SqlClient.SqlDataAdapter();
             buttonClear = new Button();
@@ -280,7 +279,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { aggiungiDatiToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1364, 28);
+            menuStrip1.Size = new Size(1582, 28);
             menuStrip1.TabIndex = 37;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -309,16 +308,6 @@
             dataGridView1.Size = new Size(806, 374);
             dataGridView1.TabIndex = 38;
             // 
-            // monthCalendar
-            // 
-            monthCalendar.BackColor = Color.PowderBlue;
-            monthCalendar.Location = new Point(12, 399);
-            monthCalendar.MaxSelectionCount = 100000;
-            monthCalendar.MinDate = new DateTime(2025, 1, 1, 0, 0, 0, 0);
-            monthCalendar.Name = "monthCalendar";
-            monthCalendar.TabIndex = 39;
-            monthCalendar.DateChanged += monthCalendar_DateChanged;
-            // 
             // buttonLetturaDeiDati
             // 
             buttonLetturaDeiDati.Location = new Point(297, 475);
@@ -344,10 +333,9 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PowderBlue;
-            ClientSize = new Size(1364, 599);
+            ClientSize = new Size(1582, 599);
             Controls.Add(buttonClear);
             Controls.Add(buttonLetturaDeiDati);
-            Controls.Add(monthCalendar);
             Controls.Add(dataGridView1);
             Controls.Add(menuStrip1);
             Controls.Add(panel7);
@@ -413,7 +401,6 @@
         private ToolStripMenuItem aggiungiDatiToolStripMenuItem;
         private DataGridView dataGridView1;
         private ToolStripMenuItem letturaDatiToolStripMenuItem;
-        private MonthCalendar monthCalendar;
         private Button buttonLetturaDeiDati;
         private Microsoft.Data.SqlClient.SqlDataAdapter sqlDataAdapter1;
         private DateTimePicker dateTimePickerNascita;

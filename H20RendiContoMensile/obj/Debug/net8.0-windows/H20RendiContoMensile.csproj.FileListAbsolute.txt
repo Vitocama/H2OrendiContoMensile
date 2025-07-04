@@ -150,5 +150,6 @@ C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\b
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.FormAggiungiDati.resources
-C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.FormRicerca.resources
 C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\bin\Debug\net8.0-windows\Dapper.dll
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.FormInsertDate.resources
+C:\Users\Hirad\source\repos\sito_web\H20RendiContoMensile\H20RendiContoMensile\obj\Debug\net8.0-windows\H20RendiContoMensile.FormH20.resources
