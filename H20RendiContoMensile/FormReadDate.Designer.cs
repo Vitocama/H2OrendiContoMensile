@@ -1,6 +1,6 @@
 ﻿namespace H20RendiContoMensile
 {
-    partial class FormInsertDate
+    partial class FormReadDati
     {
         /// <summary>
         ///  Required designer variable.
@@ -256,14 +256,14 @@
             // aggiungiDatiToolStripMenuItem1
             // 
             aggiungiDatiToolStripMenuItem1.Name = "aggiungiDatiToolStripMenuItem1";
-            aggiungiDatiToolStripMenuItem1.Size = new Size(224, 26);
+            aggiungiDatiToolStripMenuItem1.Size = new Size(181, 26);
             aggiungiDatiToolStripMenuItem1.Text = "aggiungi dati";
             aggiungiDatiToolStripMenuItem1.Click += aggiungiDatiToolStripMenuItem1_Click;
             // 
             // litriSpettantiToolStripMenuItem
             // 
             litriSpettantiToolStripMenuItem.Name = "litriSpettantiToolStripMenuItem";
-            litriSpettantiToolStripMenuItem.Size = new Size(224, 26);
+            litriSpettantiToolStripMenuItem.Size = new Size(181, 26);
             litriSpettantiToolStripMenuItem.Text = "Litri Spettanti";
             litriSpettantiToolStripMenuItem.Click += litriSpettantiToolStripMenuItem_Click;
             // 
@@ -298,7 +298,7 @@
             buttonAnagrafe.UseVisualStyleBackColor = true;
             buttonAnagrafe.Click += button14_Click;
             // 
-            // FormInsertDate
+            // FormReadDati
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -312,7 +312,7 @@
             Controls.Add(menuStrip1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MainMenuStrip = menuStrip1;
-            Name = "FormInsertDate";
+            Name = "FormReadDati";
             Text = "Lettura dati";
             Load += Form1_Load;
             panel4.ResumeLayout(false);

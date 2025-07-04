@@ -1,6 +1,6 @@
 ﻿namespace H20RendiContoMensile
 {
-    partial class FormAggiungiDati
+    partial class FormInsertDate
     {
         /// <summary>
         /// Required designer variable.
@@ -52,13 +52,14 @@
             panel6 = new Panel();
             textBoxContatto = new TextBox();
             labelContatto = new Label();
-            menuStrip1 = new MenuStrip();
-            aggiungiDatiToolStripMenuItem = new ToolStripMenuItem();
-            letturaDatiToolStripMenuItem = new ToolStripMenuItem();
             dataGridView1 = new DataGridView();
             buttonLetturaDeiDati = new Button();
             sqlDataAdapter1 = new Microsoft.Data.SqlClient.SqlDataAdapter();
             buttonClear = new Button();
+            aggiungiDatiToolStripMenuItem = new ToolStripMenuItem();
+            letturaDatiToolStripMenuItem = new ToolStripMenuItem();
+            conteggioH2OToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1 = new MenuStrip();
             panel10.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
@@ -67,8 +68,8 @@
             panel8.SuspendLayout();
             panel9.SuspendLayout();
             panel6.SuspendLayout();
-            menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // panel10
@@ -273,31 +274,6 @@
             labelContatto.TabIndex = 13;
             labelContatto.Text = "Contatto";
             // 
-            // menuStrip1
-            // 
-            menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { aggiungiDatiToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1582, 28);
-            menuStrip1.TabIndex = 37;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // aggiungiDatiToolStripMenuItem
-            // 
-            aggiungiDatiToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { letturaDatiToolStripMenuItem });
-            aggiungiDatiToolStripMenuItem.Name = "aggiungiDatiToolStripMenuItem";
-            aggiungiDatiToolStripMenuItem.Size = new Size(69, 24);
-            aggiungiDatiToolStripMenuItem.Text = "pagine";
-            aggiungiDatiToolStripMenuItem.Click += aggiungiDatiToolStripMenuItem_Click;
-            // 
-            // letturaDatiToolStripMenuItem
-            // 
-            letturaDatiToolStripMenuItem.Name = "letturaDatiToolStripMenuItem";
-            letturaDatiToolStripMenuItem.Size = new Size(168, 26);
-            letturaDatiToolStripMenuItem.Text = "Lettura dati";
-            letturaDatiToolStripMenuItem.Click += letturaDatiToolStripMenuItem_Click;
-            // 
             // dataGridView1
             // 
             dataGridView1.AllowUserToOrderColumns = true;
@@ -328,7 +304,39 @@
             buttonClear.UseVisualStyleBackColor = true;
             buttonClear.Click += buttonClear_Click;
             // 
-            // FormAggiungiDati
+            // aggiungiDatiToolStripMenuItem
+            // 
+            aggiungiDatiToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { letturaDatiToolStripMenuItem, conteggioH2OToolStripMenuItem });
+            aggiungiDatiToolStripMenuItem.Name = "aggiungiDatiToolStripMenuItem";
+            aggiungiDatiToolStripMenuItem.Size = new Size(69, 24);
+            aggiungiDatiToolStripMenuItem.Text = "pagine";
+            aggiungiDatiToolStripMenuItem.Click += aggiungiDatiToolStripMenuItem_Click;
+            // 
+            // letturaDatiToolStripMenuItem
+            // 
+            letturaDatiToolStripMenuItem.Name = "letturaDatiToolStripMenuItem";
+            letturaDatiToolStripMenuItem.Size = new Size(224, 26);
+            letturaDatiToolStripMenuItem.Text = "Lettura dati";
+            letturaDatiToolStripMenuItem.Click += letturaDatiToolStripMenuItem_Click;
+            // 
+            // conteggioH2OToolStripMenuItem
+            // 
+            conteggioH2OToolStripMenuItem.Name = "conteggioH2OToolStripMenuItem";
+            conteggioH2OToolStripMenuItem.Size = new Size(224, 26);
+            conteggioH2OToolStripMenuItem.Text = "Conteggio H2O";
+            conteggioH2OToolStripMenuItem.Click += conteggioH2OToolStripMenuItem_Click;
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { aggiungiDatiToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(1582, 28);
+            menuStrip1.TabIndex = 37;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // FormInsertDate
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -346,7 +354,7 @@
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Name = "FormAggiungiDati";
+            Name = "FormInsertDate";
             Text = "aggiunta dati";
             Load += FormAggiungiDati_Load;
             panel10.ResumeLayout(false);
@@ -365,9 +373,9 @@
             panel9.PerformLayout();
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -397,13 +405,14 @@
         private Panel panel6;
         private TextBox textBoxContatto;
         private Label labelContatto;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem aggiungiDatiToolStripMenuItem;
         private DataGridView dataGridView1;
-        private ToolStripMenuItem letturaDatiToolStripMenuItem;
         private Button buttonLetturaDeiDati;
         private Microsoft.Data.SqlClient.SqlDataAdapter sqlDataAdapter1;
         private DateTimePicker dateTimePickerNascita;
         private Button buttonClear;
+        private ToolStripMenuItem aggiungiDatiToolStripMenuItem;
+        private ToolStripMenuItem letturaDatiToolStripMenuItem;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem conteggioH2OToolStripMenuItem;
     }
 }

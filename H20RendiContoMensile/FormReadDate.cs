@@ -7,17 +7,19 @@ using System.Data.SqlClient;
 
 
 
+
 namespace H20RendiContoMensile;
 
-public partial class FormInsertDate : Form
+public partial class FormReadDati : Form
 {
 
-    public string connectionString = "Data Source=ACER\\SQLEXPRESS;Initial Catalog=MMI;Integrated Security=True;Encrypt=False;";
+    public  string connectionString = "Data Source=ACER\\SQLEXPRESS;Initial Catalog=MMI;Integrated Security=True;Encrypt=False;";
+
 
     List<Button> buttons = new List<Button>();
 
 
-    public FormInsertDate()
+    public FormReadDati()
     {
         InitializeComponent();
         buttons = new List<Button>() {
@@ -334,7 +336,7 @@ public partial class FormInsertDate : Form
     private void aggiungiDatiToolStripMenuItem1_Click(object sender, EventArgs e)
     {
         this.Hide();
-        FormAggiungiDati formAggiungiDati = new FormAggiungiDati();
+        FormInsertDate formAggiungiDati = new FormInsertDate();
         formAggiungiDati.Show();
 
     }
