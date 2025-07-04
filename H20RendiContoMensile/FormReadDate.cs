@@ -343,15 +343,31 @@ public partial class FormReadDati : Form
 
     private void buttonLetturaDeiDati_Click(object sender, EventArgs e)
     {
-        string query = "SELECT * FROM rendicontoAnnuale_2025";
+        string query;
 
-        using (SqlConnection conn = new SqlConnection(connectionString))
+        if (string.IsNullOrEmpty(textBoxCerca.Text))
         {
-            conn.Open();
-            dataGridView1.DataSource = conn.Query<RendicontoAnnuale2025>(query, conn).ToList(); ;
+
+            query = "SELECT * FROM rendicontoAnnuale_2025 WHERE cmd_anagrafe=@cmd_anagrafe";
+            var param = new { cmd_anagrafe = textBoxCerca.Text };
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+
+                dataGridView1.DataSource = conn.Query(query, param);
+
+            }
+
+            query = "SELECT * FROM rendicontoAnnuale_2025";
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                dataGridView1.DataSource = conn.Query<RendicontoAnnuale2025>(query).ToList(); ;
+
+            }
 
         }
-
     }
 
     private void button14_Click(object sender, EventArgs e)

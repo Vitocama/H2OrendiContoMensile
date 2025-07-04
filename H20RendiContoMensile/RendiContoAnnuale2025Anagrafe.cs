@@ -9,14 +9,24 @@ namespace H20RendiContoMensile
  
         public class RendiContoAnnuale2025Anagrafe
         {
-            public string cmd { get; set; }
-            public string nome { get; set; }
-            public string cognome { get; set; }
-            public DateTime data_nascita { get; set; }
-            public string luogo_di_nascita { get; set; }
-            public string residenza { get; set; }
-            public string email { get; set; }
-            public string contatto { get; set; }
-        }
+        public int Id { get; set; }
+
+        public string cmd { get; set; }
+
+        public string Nome { get; set; } = string.Empty;
+
+        public string Cognome { get; set; } = string.Empty;
+
+        public DateTime DataNascita { get; set; }
+
+        public DateTime? LuogoDiNascita { get; set; } // Probabilmente è un errore nel tipo: dovrebbe essere stringa
+
+        public string? Residenza { get; set; }
+
+        public string? Email { get; set; }
+
+        public string? Contatto { get; set; }
+    }
+
     }
 

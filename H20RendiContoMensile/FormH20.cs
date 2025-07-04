@@ -30,8 +30,8 @@ namespace H20RendiContoMensile
         {
             using (SqlConnection conn = new SqlConnection(formInsertDate.connectionString))
             {
-                string query = "SELECT * FROM rendicontoAnnuale_2025  WHERE cmd=@cmd";
-                var presentkey = new { cmd = textBoxCMDH20.Text };
+                string query = "SELECT * FROM rendicontoAnnuale_2025  WHERE cmd_anagrafe=@cmdAnagrafe";
+                var presentkey = new { CmdAnagrafe = textBoxCMDH20.Text };
                 conn.Open();
                 var item = conn.QueryFirstOrDefault<RendicontoAnnuale2025>(query, presentkey);
                 if (item == null)

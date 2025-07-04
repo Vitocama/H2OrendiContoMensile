@@ -8,25 +8,26 @@ namespace H20RendiContoMensile
 {
     public class RendicontoAnnuale2025
     {
+
         public int Id { get; set; }
 
-        public string Cmd { get; set; } = string.Empty;  // varchar(50) NOT NULL
+        public string cmd_anagrafe { get; set; }
 
-        public string Gennaio { get; set; } = string.Empty;   // varchar(5) NOT NULL
-        public string Febbraio { get; set; } = string.Empty;
-        public string Marzo { get; set; } = string.Empty;
-        public string Aprile { get; set; } = string.Empty;
-        public string Maggio { get; set; } = string.Empty;
-        public string Giugno { get; set; } = string.Empty;
-        public string Luglio { get; set; } = string.Empty;
-        public string Agosto { get; set; } = string.Empty;
-        public string Settembre { get; set; } = string.Empty;
-        public string Ottobre { get; set; } = string.Empty;
-        public string Novembre { get; set; } = string.Empty;
-        public string Dicembre { get; set; } = string.Empty;
+        public string Gennaio { get; set; }
+        public string Febbraio { get; set; } 
+        public string Marzo { get; set; } 
+        public string Maggio { get; set; }
+        public string Giugno { get; set; } 
+        public string Luglio { get; set; } 
+        public string Agosto { get; set; } 
+        public string Settembre { get; set; } 
+        public string Ottobre { get; set; } 
+        public string Novembre { get; set; } 
+        public string Dicembre { get; set; } 
 
-        public int NumeroBottiglie { get; set; }  // int NOT NULL
+        public int NumeroBottiglie { get; set; }
 
-        public DateTime UltimaDataLettura { get; set; }  // nullable DATE
+        public DateTime? UltimaDataLettura { get; set; }
     }
 }
+
