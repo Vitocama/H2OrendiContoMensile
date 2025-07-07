@@ -59,15 +59,10 @@ namespace H20RendiContoMensile
                     var param = new { cmd = textBoxCMD.Text };
 
                     // Esegui la query, mappando i risultati in oggetti della classe rendi_contoAnnuale_2025_Anagrafe
-                    var risultati = conn.Query<RendiContoAnnuale2025Anagrafe>(query, param).ToList();
+                   conn.Query<RendiContoAnnuale2025Anagrafe>(query, param).ToList();
 
 
-                    if (risultati.Count > 0)
-                    {
-                        MessageBox.Show("errore di key");
-
-                        return;
-                    }
+                    
                 }
             }
             catch (Exception ex)

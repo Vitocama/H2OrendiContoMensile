@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|c:\\users\\hirad\\source\\repos\\sito_web\\h20rendicontomensile\\h20rendicontomensile\\readdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|solutionrelative:h20rendicontomensile\\readdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|c:\\users\\hirad\\source\\repos\\sito_web\\h20rendicontomensile\\h20rendicontomensile\\formh20.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|solutionrelative:h20rendicontomensile\\formh20.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\h20rendicontomensile\\readdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|solutionrelative:h20rendicontomensile\\readdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\h20rendicontomensile\\formh20.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|solutionrelative:h20rendicontomensile\\formh20.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\h20rendicontomensile\\insertdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|solutionrelative:h20rendicontomensile\\insertdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|c:\\users\\hirad\\source\\repos\\sito_web\\h20rendicontomensile\\h20rendicontomensile\\forminsertdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|solutionrelative:h20rendicontomensile\\forminsertdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|c:\\users\\hirad\\source\\repos\\sito_web\\h20rendicontomensile\\h20rendicontomensile\\insertdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|solutionrelative:h20rendicontomensile\\insertdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|c:\\users\\hirad\\source\\repos\\sito_web\\h20rendicontomensile\\h20rendicontomensile\\rendicontoannuale2025.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|solutionrelative:h20rendicontomensile\\rendicontoannuale2025.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|c:\\users\\hirad\\source\\repos\\sito_web\\h20rendicontomensile\\h20rendicontomensile\\insertdate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|solutionrelative:h20rendicontomensile\\insertdate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|c:\\users\\hirad\\source\\repos\\sito_web\\h20rendicontomensile\\h20rendicontomensile\\formreaddate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|solutionrelative:h20rendicontomensile\\formreaddate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\h20rendicontomensile\\formreaddate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|solutionrelative:h20rendicontomensile\\formreaddate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\h20rendicontomensile\\forminsertdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E5E337E9-F346-42D5-9275-0D320F2D1D07}|H20RendiContoMensile\\H20RendiContoMensile.csproj|solutionrelative:h20rendicontomensile\\forminsertdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,8 +37,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 248,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,66 +46,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InsertDate.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\InsertDate.Designer.cs",
-              "RelativeDocumentMoniker": "H20RendiContoMensile\\InsertDate.Designer.cs",
-              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\InsertDate.Designer.cs",
-              "RelativeToolTip": "H20RendiContoMensile\\InsertDate.Designer.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "FormInsertDate.cs",
+              "DocumentMoniker": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\FormInsertDate.cs",
+              "RelativeDocumentMoniker": "H20RendiContoMensile\\FormInsertDate.cs",
+              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\FormInsertDate.cs",
+              "RelativeToolTip": "H20RendiContoMensile\\FormInsertDate.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAADYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T21:10:12.146Z",
+              "WhenOpened": "2025-07-06T21:03:27.339Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReadDate.cs",
-              "DocumentMoniker": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\ReadDate.cs",
-              "RelativeDocumentMoniker": "H20RendiContoMensile\\ReadDate.cs",
-              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\ReadDate.cs",
-              "RelativeToolTip": "H20RendiContoMensile\\ReadDate.cs",
-              "ViewState": "AgIAAGkBAAAAAAAAAAAUwHYBAAAMAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "RendicontoAnnuale2025.cs",
+              "DocumentMoniker": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\RendicontoAnnuale2025.cs",
+              "RelativeDocumentMoniker": "H20RendiContoMensile\\RendicontoAnnuale2025.cs",
+              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\RendicontoAnnuale2025.cs",
+              "RelativeToolTip": "H20RendiContoMensile\\RendicontoAnnuale2025.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA7wBoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T07:04:09.581Z",
+              "WhenOpened": "2025-07-04T17:08:25.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormReadDate.cs",
+              "DocumentMoniker": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\FormReadDate.cs",
+              "RelativeDocumentMoniker": "H20RendiContoMensile\\FormReadDate.cs",
+              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\FormReadDate.cs",
+              "RelativeToolTip": "H20RendiContoMensile\\FormReadDate.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T16:12:46.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormReadDate.cs [Progettazione]",
+              "DocumentMoniker": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\FormReadDate.cs",
+              "RelativeDocumentMoniker": "H20RendiContoMensile\\FormReadDate.cs",
+              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\FormReadDate.cs [Progettazione]",
+              "RelativeToolTip": "H20RendiContoMensile\\FormReadDate.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T16:12:40.782Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormInsertDate.cs [Progettazione]",
+              "DocumentMoniker": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\FormInsertDate.cs",
+              "RelativeDocumentMoniker": "H20RendiContoMensile\\FormInsertDate.cs",
+              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\FormInsertDate.cs [Progettazione]",
+              "RelativeToolTip": "H20RendiContoMensile\\FormInsertDate.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T10:40:14.694Z",
+              "EditorCaption": " [Progettazione]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormH20.cs",
+              "DocumentMoniker": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\FormH20.cs",
+              "RelativeDocumentMoniker": "H20RendiContoMensile\\FormH20.cs",
+              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\FormH20.cs*",
+              "RelativeToolTip": "H20RendiContoMensile\\FormH20.cs*",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAEwGwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T10:38:43.562Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ReadDate.cs [Progettazione]",
-              "DocumentMoniker": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\ReadDate.cs",
-              "RelativeDocumentMoniker": "H20RendiContoMensile\\ReadDate.cs",
-              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\ReadDate.cs [Progettazione]",
-              "RelativeToolTip": "H20RendiContoMensile\\ReadDate.cs [Progettazione]",
+              "Title": "FormH20.cs [Progettazione]",
+              "DocumentMoniker": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\FormH20.cs",
+              "RelativeDocumentMoniker": "H20RendiContoMensile\\FormH20.cs",
+              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\FormH20.cs [Progettazione]*",
+              "RelativeToolTip": "H20RendiContoMensile\\FormH20.cs [Progettazione]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T20:57:05.797Z",
+              "WhenOpened": "2025-07-04T10:38:24.114Z",
               "EditorCaption": " [Progettazione]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "InsertDate.cs [Progettazione]",
-              "DocumentMoniker": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\InsertDate.cs",
-              "RelativeDocumentMoniker": "H20RendiContoMensile\\InsertDate.cs",
-              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\InsertDate.cs [Progettazione]",
-              "RelativeToolTip": "H20RendiContoMensile\\InsertDate.cs [Progettazione]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T20:56:14.955Z",
-              "EditorCaption": " [Progettazione]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InsertDate.cs",
-              "DocumentMoniker": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\InsertDate.cs",
-              "RelativeDocumentMoniker": "H20RendiContoMensile\\InsertDate.cs",
-              "ToolTip": "C:\\Users\\Hirad\\source\\repos\\sito_web\\H20RendiContoMensile\\H20RendiContoMensile\\InsertDate.cs",
-              "RelativeToolTip": "H20RendiContoMensile\\InsertDate.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAEwIsAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T13:10:22.46Z",
-              "EditorCaption": ""
             }
           ]
         }

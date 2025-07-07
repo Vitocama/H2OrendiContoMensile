@@ -24,10 +24,7 @@ namespace H20RendiContoMensile
         public string Ottobre { get; set; } 
         public string Novembre { get; set; } 
         public string Dicembre { get; set; } 
-
-        public int NumeroBottiglie { get; set; }
-
-        public DateTime? UltimaDataLettura { get; set; }
+        public DateTime Ultima_data_lettura { get; set; }
     }
 }
 
