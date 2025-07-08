@@ -147,14 +147,14 @@
             // inserimentoDatiToolStripMenuItem
             // 
             inserimentoDatiToolStripMenuItem.Name = "inserimentoDatiToolStripMenuItem";
-            inserimentoDatiToolStripMenuItem.Size = new Size(224, 26);
+            inserimentoDatiToolStripMenuItem.Size = new Size(200, 26);
             inserimentoDatiToolStripMenuItem.Text = "Inserimento dati";
             inserimentoDatiToolStripMenuItem.Click += inserimentoDatiToolStripMenuItem_Click;
             // 
             // letturaDatiToolStripMenuItem
             // 
             letturaDatiToolStripMenuItem.Name = "letturaDatiToolStripMenuItem";
-            letturaDatiToolStripMenuItem.Size = new Size(224, 26);
+            letturaDatiToolStripMenuItem.Size = new Size(200, 26);
             letturaDatiToolStripMenuItem.Text = "Lettura dati";
             letturaDatiToolStripMenuItem.Click += letturaDatiToolStripMenuItem_Click;
             // 
@@ -171,6 +171,7 @@
             Controls.Add(monthCalendarH20);
             Name = "FormH20";
             Text = "H20";
+            Load += FormH20_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);

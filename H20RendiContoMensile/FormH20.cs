@@ -9,6 +9,7 @@ using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,9 +27,9 @@ namespace H20RendiContoMensile
         public FormH20()
         {
 
-           
+
             InitializeComponent();
-            monthCalendarH20.MaxDate=DateTime.Today;
+            monthCalendarH20.MaxDate = DateTime.Today;
             monthCalendarH20.SelectionStart = DateTime.Today;
         }
 
@@ -39,7 +40,7 @@ namespace H20RendiContoMensile
                 string query = "SELECT * FROM rendi_contoAnnuale_2025_Anagrafe  WHERE cmd=@cmd";
                 var presentkey = new { cmd = textBoxCMDH20.Text };
                 conn.Open();
-               var item = conn.QueryFirstOrDefault<RendiContoAnnuale2025Anagrafe>(query, presentkey);
+                var item = conn.QueryFirstOrDefault<RendiContoAnnuale2025Anagrafe>(query, presentkey);
                 if (item == null)
                 {
                     MessageBox.Show("non e' presente la chiace inserita", "Messaggio di errore", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -80,7 +81,7 @@ namespace H20RendiContoMensile
                 }
 
             }
-                
+
             int error = -1;
             if (int.TryParse(textBoxGiorniDiFerie.Text, out error))
                 numero_botttiglie = numero_botttiglie - int.Parse(textBoxGiorniDiFerie.Text);
@@ -93,59 +94,116 @@ namespace H20RendiContoMensile
 
 
             if (dialog == DialogResult.Yes)
-            { 
-                DateTime ultima_data=monthCalendarH20.SelectionEnd.Date;
+            {
+                DateTime ultima_data = monthCalendarH20.SelectionEnd.Date;
                 try
                 {
-                    int num_mese=ultima_data.Month;
+
+
+
+
+                    int num_mese = ultima_data.Month;
 
                     string mese = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(num_mese);
 
+                    int giorni_totala = (int)DateTime.DaysInMonth(ultima_data.Year, num_mese);
 
-
-
-
+                    string dato = "FERIE " + textBoxGiorniDiFerie.Text + " " + numero_botttiglie.ToString() + "/" + giorni_totala.ToString() + " " + ultima_data.Date.ToString();
 
                     using (SqlConnection conn = new SqlConnection(formInsertDate.connectionString))
                     {
-                        string queryUpdate = @"UPDATE rendicontoAnnuale_2025  
-                SET 
-                    Ultima_data_lettura=@Ultima_data_lettura
-                 
-                where cmd_anagrafe=@cmd_anagrafe
-            
-                ";
-
                         conn.Open();
-                        var updateVar = new { cmd_anagrafe = textBoxCMDH20.Text, Ultima_data_lettura = ultima_data };
+                        string query = "SELECT " + mese + " FROM rendicontoAnnuale_2025 where cmd_anagrafe=@cmd_anagrafe";
+
+                        var querySelect = new { cmd_anagrafe = textBoxCMDH20.Text };
 
 
-                        int righe =  conn.Execute(queryUpdate,updateVar);
 
-                        if (righe == 0) {
-                            var insertVar = new { cmd_anagrafe = textBoxCMDH20.Text, Ultima_data_lettura = ultima_data };
+                        string control = conn.QueryFirstOrDefault<string>(query, querySelect);
 
-                           string queryInsert = @"INSERT INTO rendicontoAnnuale_2025(cmd_anagrafe,Ultima_data_lettura) 
-                                       VALUES(@cmd_anagrafe,@Ultima_data_lettura)
-                               
-                                 ";
-                            conn.Execute(queryInsert, insertVar);
+
+
+
+
+
+
+
+
+
+
+
+
+                        if (control != null)
+                        {
+
+
+                            char[] separatore = new char[] { ' ', '/' };
+                            string[] info = control.Split(separatore);
+
+                            DateTime periodo = new DateTime(Int32.Parse(info[6]), Int32.Parse(info[5]), Int32.Parse(info[4]));
+                            if (monthCalendarH20.SelectionEnd.Date <= periodo)
+                            {
+                                MessageBox.Show("periodo gia valutato", "controllo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                return;
+                            }
+
+
+                            string queryUpdate = $@"
+                            UPDATE rendicontoAnnuale_2025  
+                            SET {mese} = @mese  
+                            WHERE cmd_anagrafe = @cmd_anagrafe";
+
+                            string ferie = (Int32.Parse(info[1]) + Int32.Parse(textBoxGiorniDiFerie.Text)).ToString();
+
+                            string bottiglie = (Int32.Parse(info[2]) + numero_botttiglie).ToString();
+
+                            string stringa_finale = "FERIE " + ferie + " " + bottiglie + "/" + giorni_totala.ToString() + " " + ultima_data.ToString();
+
+                            var updateVar = new
+                            {
+                                cmd_anagrafe = textBoxCMDH20.Text,
+                                mese = stringa_finale
+
+                            };
+                            conn.Execute(queryUpdate, updateVar);
 
 
                         }
 
-                        MessageBox.Show("dati salvati correttamente", "conferma", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        textBoxCMDH20.Clear();
-                        return;
+
+
+                        else
+                        {
+                            string queryInsert = @"INSERT INTO rendicontoAnnuale_2025 (cmd_anagrafe, " + mese + @")
+                              VALUES (@cmd_anagrafe, @" + mese + ")";
+
+                            dynamic insertVar = new System.Dynamic.ExpandoObject();
+                            insertVar.cmd_anagrafe = textBoxCMDH20.Text;
+                            ((IDictionary<string, object>)insertVar)[mese] = dato;
+
+                            conn.Execute(queryInsert, (object)insertVar);
+                        }
+
                     }
+
+
+
                 }
-                catch (Exception ex) {
-                    MessageBox.Show("rilevato errore" + ex.Message,"errore",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                catch (Exception ex)
+                {
+                    MessageBox.Show("rilevato errore" + ex.Message, "errore", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                
+
 
 
             }
+
+            MessageBox.Show("dati salvati correttamente", "conferma", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            textBoxCMDH20.Clear();
+            return;
+
+
+
 
             if (dialog == DialogResult.No)
             {
@@ -197,6 +255,11 @@ namespace H20RendiContoMensile
             this.Hide();
             FormReadDati formReadDati = new FormReadDati();
             formReadDati.ShowDialog();
+        }
+
+        private void FormH20_Load(object sender, EventArgs e)
+        {
+            monthCalendarH20.CalendarDimensions = new Size(1, 1);
         }
     }
 }
